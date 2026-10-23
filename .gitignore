@@ -1,0 +1,7 @@
+Bastion.xcodeproj/
+build/
+.build/
+Core/.build/
+*.ipa
+Payload/
+.swiftpm/

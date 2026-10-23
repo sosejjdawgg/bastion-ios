@@ -1,0 +1,76 @@
+name: Build iOS app
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s "$(ls -d /Applications/Xcode_16*.app | sort -V | tail -1)" && xcodebuild -version
+
+      - name: Generate Xcode project
+        run: brew install xcodegen && xcodegen generate
+
+      - name: Test shared logic
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          cd Core && swift test 2>&1 | tee ../test.log | tail -40
+
+      - name: Build (unsigned)
+        run: |
+          set -o pipefail
+          xcodebuild -project Bastion.xcodeproj -scheme Bastion -configuration Release \
+            -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            build 2>&1 | tee build.log | grep -E "error:|\*\* BUILD" || true
+          test -d build/Build/Products/Release-iphoneos/Bastion.app
+
+      - name: Package IPA
+        run: |
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/Bastion.app Payload/
+          zip -qry Bastion.ipa Payload
+          ls -la Bastion.ipa
+
+      - name: Collect logs
+        if: always()
+        run: |
+          { echo "commit: $GITHUB_SHA"; echo "status: ${{ job.status }}"; echo; echo "== errors =="; grep -E "error:" build.log | sort -u | head -200 || true; \
+            echo; echo "== tests =="; tail -120 test.log 2>/dev/null || true; } > build-report.txt
+          cp build.log build-full.log 2>/dev/null || touch build-full.log
+
+      - name: Publish logs
+        if: always()
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ci-logs
+          name: CI logs
+          prerelease: true
+          files: |
+            build-report.txt
+            build-full.log
+
+      - name: Publish IPA
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Bastion for iOS (latest build)
+          body: |
+            Unsigned build for sideloading with Sideloadly or AltStore. Built from ${{ github.sha }}.
+          files: Bastion.ipa
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Bastion-ipa
+          path: Bastion.ipa

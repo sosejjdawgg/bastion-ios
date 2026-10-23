@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Framatube</title>
+        <link>https://framatube.org</link>
+        <description>Framasoft PeerTube platform. Framasoft is a non-profit that promotes and spreads free culture in general, and free-libre software in particular. Please do not ask some accounts on Framatube.org, this is a private instance! If you want an account to share videos on another PeerTube platform, please go to https://joinpeertube.org/instances?profile=video-maker and find a PeerTube platform that fit your needs. To contact us : https://contact.framasoft.org/#peertube Merci de ne pas nous demander de vous ouvrir un compte sur Framatube ! Framatube est une instance privée sur laquelle nous mettons nos vidéos. Si vous voulez un compte pour partager des vidéos sur une plateforme PeerTube, merci de vous rendre sur https://joinpeertube.org/instances?profile=video-maker pour en choisir une ouverte aux inscriptions. Pour nous contacter : https://contact.framasoft.org/fr/#peertube</description>
+        <lastBuildDate>Fri, 23 Oct 2026 11:18:18 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>PeerTube - https://framatube.org</generator>
+        <image>
+            <title>Framatube</title>
+            <url>https://framatube.org/lazy-static/avatars/59e98d0f-7b0f-4ab5-bbe7-e4454b4c68f1.png</url>
+            <link>https://framatube.org</link>
+        </image>
+        <copyright>All rights reserved, unless otherwise specified in the terms specified at https://framatube.org/about and potential licenses granted by each content's rightholder.</copyright>
+        <atom:link href="https://framatube.org/feeds/videos.xml?sort=-publishedAt" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Peine de bannissement des réseaux sociaux (23/10/2026)]]></title>
+            <link>https://framatube.org/w/uEK7oggDYqhHUrXcACw9o3</link>
+            <guid>https://framatube.org/w/uEK7oggDYqhHUrXcACw9o3</guid>
+            <pubDate>Fri, 23 Oct 2026 08:40:40 GMT</pubDate>
+            <description><![CDATA[Extrait du journal de 10h du 23 octobre 2026 de franceinfo sur l'annonce de Gérald Darmanin voulant des peines de bannissement des réseaux sociaux.]]></description>
+            <content:encoded><![CDATA[<p>Extrait du journal de 10h du 23 octobre 2026 de franceinfo sur l'annonce de Gérald Darmanin voulant des peines de bannissement des réseaux sociaux.</p>
+]]></content:encoded>
+            <dc:creator>LQDN - Revue de presse</dc:creator>
+            <category>News &amp; Politics</category>
+            <enclosure length="12544207" type="video/mp4" url="https://framatube.org/download/videos/generate/e828b698-578c-43c7-aa7a-d4002f69ff8e?videoFileIds=1665331&amp;videoFileIds=1665330"/>
+            <media:community>
+                <media:statistics views="17"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/uEK7oggDYqhHUrXcACw9o3"/>
+            <media:player url="https://framatube.org/w/uEK7oggDYqhHUrXcACw9o3"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/fa683116-261b-45e7-bae2-1cbe365825c8-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/41feab2c-2217-413d-b43f-67dc250a468c-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/d57570aa-7ff7-424f-952e-f4c8e4dba305-240-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/30dc0d6f-dfad-4488-bb81-24ef2da500e1-0-hls.torrent" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="8983295" url="https://cdn.octos3.fr/lqdn/web-videos/303902cf-54aa-45bc-aeeb-255d2f175aff-0.mp4" framerate="0" duration="315" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="3560912" url="https://cdn.octos3.fr/lqdn/streaming-playlists/hls/e828b698-578c-43c7-aa7a-d4002f69ff8e/a1debf66-f2f7-4f0b-b958-37c6e7104918-480-fragmented.mp4" framerate="25" duration="315" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="240" fileSize="1610926" url="https://cdn.octos3.fr/lqdn/streaming-playlists/hls/e828b698-578c-43c7-aa7a-d4002f69ff8e/64c62cf2-1660-4056-b98a-6cffb8cb0bf3-240-fragmented.mp4" framerate="25" duration="315" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="5228973" url="https://cdn.octos3.fr/lqdn/streaming-playlists/hls/e828b698-578c-43c7-aa7a-d4002f69ff8e/e03aed08-6c8f-4367-ae7e-5c692a831995-0-fragmented.mp4" framerate="0" duration="315" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/a1ec48cf-09df-40de-a2e2-7d5b9ecccade.png" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Peine de bannissement des réseaux sociaux (23/10/2026)</media:title>
+            <media:description type="plain">Extrait du journal de 10h du 23 octobre 2026 de franceinfo sur l'annonce de Gérald Darmanin voulant des peines de bannissement des réseaux sociaux.</media:description>
+        </item>
+        <item>
+            <title><![CDATA[calques-groenland]]></title>
+            <link>https://framatube.org/w/6SiWvJwHYAeYrpBjgv9jqV</link>
+            <guid>https://framatube.org/w/6SiWvJwHYAeYrpBjgv9jqV</guid>
+            <pubDate>Fri, 23 Oct 2026 06:39:05 GMT</pubDate>
+            <dc:creator>clc36_informatique_et_photo</dc:creator>
+            <category>How To</category>
+            <enclosure length="522833197" type="video/mp4" url="https://framatube.org/download/videos/generate/2f83f009-25dc-4140-b629-0a372f4a2b9d?videoFileIds=1665098"/>
+            <media:community>
+                <media:statistics views="1"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/6SiWvJwHYAeYrpBjgv9jqV"/>
+            <media:player url="https://framatube.org/w/6SiWvJwHYAeYrpBjgv9jqV"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ac4eaae0-1226-412a-a19e-6208c781150b-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/b7f3d225-bc82-48ed-b29d-e241692afcab-1080-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/0bf07af4-e109-419d-9feb-dedb276bc32d-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/1605bc09-b30b-45e9-ae5a-3c45b50b14c3-240-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/bafb6290-dfb6-442a-9c06-2b5e8f7e4f66-0-hls.torrent" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="24444313" url="https://peertube-video.cdn.tedomum.net/web-videos/b8af368a-df30-4852-8e3d-194a641da271-0.mp4" framerate="0" duration="1186" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="522833197" url="https://peertube-playlist.cdn.tedomum.net/hls/2f83f009-25dc-4140-b629-0a372f4a2b9d/a25d2147-a279-4739-8c99-c97c9cce030d-1080-fragmented.mp4" framerate="30" duration="1186" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="72415942" url="https://peertube-playlist.cdn.tedomum.net/hls/2f83f009-25dc-4140-b629-0a372f4a2b9d/988d5e03-2e79-471f-abbb-fac75e85e16a-480-fragmented.mp4" framerate="30" duration="1186" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="240" fileSize="37557537" url="https://peertube-playlist.cdn.tedomum.net/hls/2f83f009-25dc-4140-b629-0a372f4a2b9d/48ded22e-ed28-42ec-9c3d-e122c2ef9d51-240-fragmented.mp4" framerate="30" duration="1186" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="24491423" url="https://peertube-playlist.cdn.tedomum.net/hls/2f83f009-25dc-4140-b629-0a372f4a2b9d/7614cdc1-761f-478f-b602-5bb626beaa0b-0-fragmented.mp4" framerate="0" duration="1186" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/8106e7ba-578d-49a9-acd0-7d247d17ae00.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">calques-groenland</media:title>
+        </item>
+        <item>
+            <title><![CDATA[Paseo con el Sanyo y comida a Rex]]></title>
+            <link>https://framatube.org/w/wSPSvbxA5KPKHie4xeGUHq</link>
+            <guid>https://framatube.org/w/wSPSvbxA5KPKHie4xeGUHq</guid>
+            <pubDate>Thu, 22 Oct 2026 11:00:14 GMT</pubDate>
+            <description><![CDATA[De paseo con el walkman, paso siempre por la granja de Rex, un perro que está muy viejo y con un aspecto muy delgado, tiene casi 20 años. Cuando puedo le llevo comida. Hoy ha sido pollo con arroz. Ya de paso comen los gatos también.]]></description>
+            <content:encoded><![CDATA[<p>De paseo con el walkman, paso siempre por la granja de Rex, un perro que está muy viejo y con un aspecto muy delgado, tiene casi 20 años. Cuando puedo le llevo comida. Hoy ha sido pollo con arroz. Ya de paso comen los gatos también.</p>
+]]></content:encoded>
+            <dc:creator>Cassette tube</dc:creator>
+            <category>Activism</category>
+            <enclosure length="17415627" type="video/mp4" url="https://framatube.org/download/videos/generate/fa0ad985-8655-438e-8b2d-ccebf2b27d62?videoFileIds=1661224"/>
+            <media:community>
+                <media:statistics views="29"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/wSPSvbxA5KPKHie4xeGUHq"/>
+            <media:player url="https://framatube.org/w/wSPSvbxA5KPKHie4xeGUHq"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/95f14b59-586a-41eb-aa78-58fd0006feee-720.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/42fe91e0-5f7c-4c26-ba6c-b0c95d098ae3-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/a798b721-4dd3-4ace-b8eb-6fb500f56588-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/9310088d-0cbf-493a-9ff2-9b0e22e1c425-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/890a39a8-d922-471a-b85b-a6e188d8ec8f-720-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/76641638-abd4-4fce-babd-a46d132bbcea-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/76c0cf8d-5fe6-49d1-b668-6f600209858a-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/00a70e6e-3c51-4e4a-97fc-3f8b70e14091-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="17415627" url="https://media.tube.tchncs.de/videos/21fe6a4d-5037-4003-8de7-9f7f5c711291-720.mp4" framerate="25" duration="54" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="8295287" url="https://media.tube.tchncs.de/videos/17b6841c-6469-43db-b6b1-17ff74a058aa-480.mp4" framerate="25" duration="54" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="5951429" url="https://media.tube.tchncs.de/videos/714a46f2-ef0b-43ea-bb8a-0a5b8a175cbc-360.mp4" framerate="25" duration="54" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="1108048" url="https://media.tube.tchncs.de/videos/e12235ce-a5fc-4f2e-a9cc-dede973ca4c4-0.mp4" framerate="0" duration="54" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="17409193" url="https://media.tube.tchncs.de/streaming-playlists/hls/fa0ad985-8655-438e-8b2d-ccebf2b27d62/ba67cd95-f196-452b-bcdd-7c896fd9206e-720-fragmented.mp4" framerate="25" duration="54" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="8289157" url="https://media.tube.tchncs.de/streaming-playlists/hls/fa0ad985-8655-438e-8b2d-ccebf2b27d62/62628dc7-8afb-4e13-a840-94db2150680b-480-fragmented.mp4" framerate="25" duration="54" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="5945135" url="https://media.tube.tchncs.de/streaming-playlists/hls/fa0ad985-8655-438e-8b2d-ccebf2b27d62/d068cf5a-f4df-4595-be93-64624ea4ee28-360-fragmented.mp4" framerate="25" duration="54" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="1110670" url="https://media.tube.tchncs.de/streaming-playlists/hls/fa0ad985-8655-438e-8b2d-ccebf2b27d62/7730e5e6-437b-4f14-827f-3ef55ae21ac4-0-fragmented.mp4" framerate="0" duration="54" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/cac7c58e-f9e8-4bf4-861b-501ff383d7b3.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Paseo con el Sanyo y comida a Rex</media:title>
+            <media:description type="plain">De paseo con el walkman, paso siempre por la granja de Rex, un perro que está muy viejo y con un aspecto muy delgado, tiene casi 20 años. Cuando puedo le llevo comida. Hoy ha sido pollo con arroz. Ya de paso comen los gatos también.</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Stadtring Zweibrücken – Pride Month Edition]]></title>
+            <link>https://framatube.org/w/ddQeZmPWeqeDJaFS7jtnvv</link>
+            <guid>https://framatube.org/w/ddQeZmPWeqeDJaFS7jtnvv</guid>
+            <pubDate>Thu, 22 Oct 2026 09:16:02 GMT</pubDate>
+            <description><![CDATA[Edit 2026-10-22: Das Video wurde schon im Sommer hochgeladen, war aber wegen eines Kopierfehlers nicht in tchncs.de auffindbar. Nur sonntagsfrüh ist der Innenstadtring Zweibrückens per Fahrrad sicher und halbwegs erträglich zu radeln. Das Cockpit...]]></description>
+            <content:encoded><![CDATA[<p>Edit 2026-10-22: Das Video wurde schon im Sommer hochgeladen, war aber wegen eines Kopierfehlers nicht in tchncs.de auffindbar.<br />
+Nur sonntagsfrüh ist der Innenstadtring Zweibrückens per Fahrrad sicher und halbwegs erträglich zu radeln. Das Cockpitvideo zwischen Kirchgang-Aufbrüchen und Brötchenkaufverkehr zeigt die etwa vier Kilometer lange Strecke ungeschnitten – in der Version "vorwärts" gegen den Uhrzeigersinn. Die Rückwärtsstrecke im Uhrzeigersinn (rechtes Video) wurde an verschiedenen Markern geschnitten und die einzelnen Abschnitte in der Geschwindigkeit angepasst.<br />
+Eine Stadtringaufnahme vom Januar 2026 auf Youtube war in beiden Richtungen unbearbeitet. Die Strecken stimmen dort nicht so genau überein.<br />
+Zur Mitte des Videos gibt es einen Abschnitt, der wegen Einbahnstraßenregelung nicht auf der gleichen Route zurückgelegt werden kann. Hier folgt der UZS der Fruchtmarktsstraße, während gegen den UZS durch die Landauer Straße führt.<br />
+Das Projekt ist eine Arbeit im Voranschreiten mit ungewissem Ausgang. Eine Vierjahreszeiten-Collage wäre eine Idee, denn mittlerweile fehlt nur noch die Herbstversion.</p>
+]]></content:encoded>
+            <dc:creator>RadtourUmsLand</dc:creator>
+            <category>Art</category>
+            <enclosure length="882141331" type="video/mp4" url="https://framatube.org/download/videos/generate/62f851a0-12be-4659-ad09-e043543164bb?videoFileIds=1661213"/>
+            <media:community>
+                <media:statistics views="8"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/ddQeZmPWeqeDJaFS7jtnvv"/>
+            <media:player url="https://framatube.org/w/ddQeZmPWeqeDJaFS7jtnvv"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/d76baed2-208f-43f5-b67d-e2f1885ce160-1080.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/f41ba64a-d220-4ec5-bf9e-90ae9486bb59-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ba3ed6f8-150e-4ba6-a6f8-7485709466a4-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/39a73aec-5de0-44fb-a68f-e49a3cac02bd-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ea5a39b1-064d-4ea4-8220-9590bd710e7a-1080-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/09696ab2-e863-4401-9ab3-5415de27557b-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/33eba39a-bd04-403d-8531-6db78fa90e0d-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/b1614187-d1c9-44f0-a7cc-e8095407d120-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="882141331" url="https://media.tube.tchncs.de/videos/59d9a16d-a656-4085-8d99-61fa7acf1e5c-1080.mp4" framerate="60" duration="498" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="91837038" url="https://media.tube.tchncs.de/videos/f1dd2bef-bedd-4f03-92df-78cd67eb5bc4-480.mp4" framerate="30" duration="498" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="59337648" url="https://media.tube.tchncs.de/videos/b013fd4f-7f08-495e-b089-36abff560716-360.mp4" framerate="30" duration="498" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="10128083" url="https://media.tube.tchncs.de/videos/487fc873-e93d-46ca-9e6c-556a91a53f2b-0.mp4" framerate="0" duration="498" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="881826905" url="https://media.tube.tchncs.de/streaming-playlists/hls/62f851a0-12be-4659-ad09-e043543164bb/6e3efad6-9642-4044-b5eb-4bedffa67b5e-1080-fragmented.mp4" framerate="60" duration="498" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="91620872" url="https://media.tube.tchncs.de/streaming-playlists/hls/62f851a0-12be-4659-ad09-e043543164bb/821b0e30-8677-4d09-98ca-5c7987e507cf-480-fragmented.mp4" framerate="30" duration="498" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="59121786" url="https://media.tube.tchncs.de/streaming-playlists/hls/62f851a0-12be-4659-ad09-e043543164bb/60be09c2-7646-49ca-9b00-c3c979cf32de-360-fragmented.mp4" framerate="30" duration="498" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="10148249" url="https://media.tube.tchncs.de/streaming-playlists/hls/62f851a0-12be-4659-ad09-e043543164bb/3b98d637-78d3-4a3a-ae95-7f309e27c65a-0-fragmented.mp4" framerate="0" duration="498" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/0d8dd7e0-0571-4460-96aa-24020df6955b.png" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Stadtring Zweibrücken – Pride Month Edition</media:title>
+            <media:description type="plain">Edit 2026-10-22: Das Video wurde schon im Sommer hochgeladen, war aber wegen eines Kopierfehlers nicht in tchncs.de auffindbar. Nur sonntagsfrüh ist der Innenstadtring Zweibrückens per Fahrrad sicher und halbwegs erträglich zu radeln. Das Cockpit...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Teaser Conférence ARTiculée "De l'Art face aux Enjeux Socio-Ecologiques"]]></title>
+            <link>https://framatube.org/w/wpVFuxV2zDZsEEJBYCpFPf</link>
+            <guid>https://framatube.org/w/wpVFuxV2zDZsEEJBYCpFPf</guid>
+            <pubDate>Tue, 20 Oct 2026 19:45:49 GMT</pubDate>
+            <description><![CDATA[Une performance artistique où les arts se joignent aux sciences pour aborder des questions telles que : Pourquoi parler d’enjeux socio-écologiques ? Qu’est-ce que L’art ? Comment peut-il répondre à ces enjeux ? En quoi est-il essentiel...]]></description>
+            <content:encoded><![CDATA[<p>Une performance artistique où les <strong>arts</strong> se joignent aux <strong>sciences</strong> pour aborder des questions telles que : Pourquoi parler d’<strong>enjeux socio-écologiques</strong> ? Qu’est-ce que L’art ? Comment peut-il répondre à ces enjeux ? En quoi est-il essentiel ?</p>
+<p>Valem sculpte sur scène tout en convoquant des disciplines telles que la philosophie, l’économie, les sciences écologiques... Elle partage avec passion sa propre expérience ainsi que des exemples d’artistes engagés.</p>
+]]></content:encoded>
+            <dc:creator>Valem</dc:creator>
+            <category>Art</category>
+            <enclosure length="26365557" type="video/mp4" url="https://framatube.org/download/videos/generate/f6495939-ee5c-4ec8-8134-7bcdbecb0bc8?videoFileIds=1661180"/>
+            <media:community>
+                <media:statistics views="11"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/wpVFuxV2zDZsEEJBYCpFPf"/>
+            <media:player url="https://framatube.org/w/wpVFuxV2zDZsEEJBYCpFPf"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/9db1baa8-86eb-43ad-b21c-3d502bf34af7-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/2664d08b-9e3a-4f6b-b962-597b1575d109-720-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/d5d694dd-7311-4814-932b-141ac8b537ad-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/b37162aa-fe8d-4af9-b9c2-57e3f25d45bc-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/37557f74-7376-4147-a9cc-ef04e9d82a83-240-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/e143ed87-1e8d-4c75-b3c9-ead2051ab749-144-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/639a1f11-666e-40b3-a6f1-afbf1939fd65-0-hls.torrent" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="5684684" url="https://aperi.tube/static/web-videos/257f4a3e-285b-4e3c-8158-a3b4392d3058-0.mp4" framerate="0" duration="120" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="26365557" url="https://aperi.tube/static/streaming-playlists/hls/f6495939-ee5c-4ec8-8134-7bcdbecb0bc8/523009b3-59aa-426c-ba19-96a131ab24e6-720-fragmented.mp4" framerate="50" duration="120" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="12091046" url="https://aperi.tube/static/streaming-playlists/hls/f6495939-ee5c-4ec8-8134-7bcdbecb0bc8/334e0bb4-e347-4613-8404-6b9226b5f130-480-fragmented.mp4" framerate="25" duration="120" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="9117333" url="https://aperi.tube/static/streaming-playlists/hls/f6495939-ee5c-4ec8-8134-7bcdbecb0bc8/feb25d44-035a-4326-bea1-7d5daf3667b3-360-fragmented.mp4" framerate="25" duration="120" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="240" fileSize="5966888" url="https://aperi.tube/static/streaming-playlists/hls/f6495939-ee5c-4ec8-8134-7bcdbecb0bc8/1ea14e29-f88b-4e3d-888c-9a7a6bed022b-240-fragmented.mp4" framerate="25" duration="120" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="144" fileSize="3780081" url="https://aperi.tube/static/streaming-playlists/hls/f6495939-ee5c-4ec8-8134-7bcdbecb0bc8/6386a785-bb8b-461c-8435-e5d40ba7d365-144-fragmented.mp4" framerate="25" duration="120" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="5689506" url="https://aperi.tube/static/streaming-playlists/hls/f6495939-ee5c-4ec8-8134-7bcdbecb0bc8/8382127d-21fc-437a-95a8-99ea1bfcd971-0-fragmented.mp4" framerate="0" duration="120" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/923a4153-0357-4cf3-907e-dd7d2de18f03.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Teaser Conférence ARTiculée "De l'Art face aux Enjeux Socio-Ecologiques"</media:title>
+            <media:description type="plain">Une performance artistique où les arts se joignent aux sciences pour aborder des questions telles que : Pourquoi parler d’enjeux socio-écologiques ? Qu’est-ce que L’art ? Comment peut-il répondre à ces enjeux ? En quoi est-il essentiel...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Dokumentation unserer Wiederaufforstung]]></title>
+            <link>https://framatube.org/w/gUWdmGQ44vCbsS1scxstEt</link>
+            <guid>https://framatube.org/w/gUWdmGQ44vCbsS1scxstEt</guid>
+            <pubDate>Tue, 20 Oct 2026 14:20:15 GMT</pubDate>
+            <description><![CDATA[Mit Ihrer Hilfe konnte dieser Wald geschaffen werden! Sie sehen einen etwa 15 Jahre alten Regenwald. Pionierbäume wurden erhalten, dazwischen kommen die von uns gepflanzten Bäume empor. Markant sind die Waldmandelbäume mit gelblichen Blättern ode...]]></description>
+            <content:encoded><![CDATA[<p>Mit Ihrer Hilfe konnte dieser Wald geschaffen werden!<br />
+Sie sehen einen etwa 15 Jahre alten Regenwald. Pionierbäume wurden erhalten, dazwischen kommen die von uns gepflanzten Bäume empor. Markant sind die Waldmandelbäume mit gelblichen Blättern oder der wilde Cashewbaum mit seinen weissen Blüten.<br />
+Zu sehen sind auch Aufnahmen aus dem Inneren des neu entstandenen Waldes.<br />
+Wir danken Pablo Rojas von PR Media in Costa Rica für diese professionellen Drohnenaufnahmen.<br />
+Die Aufnahemen stammen aus Mai 2026</p>
+]]></content:encoded>
+            <dc:creator>Eindrücke aus der Regenwald Wiederaufforstung</dc:creator>
+            <category>Activism</category>
+            <enclosure length="295806454" type="video/mp4" url="https://framatube.org/download/videos/generate/80dd2a79-b5e3-4bb2-87eb-68b6a79146e3?videoFileIds=1661159"/>
+            <media:community>
+                <media:statistics views="21"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/gUWdmGQ44vCbsS1scxstEt"/>
+            <media:player url="https://framatube.org/w/gUWdmGQ44vCbsS1scxstEt"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/d0428f0b-9dbf-4629-b0f2-922df04400bb-2160.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/10a47c48-ff19-4004-8b1c-8eda27d7df49-1080.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ceaf1832-ce4e-411c-865d-4e223655d9fe-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/166db9cc-255b-4db7-ab9b-d56697eb48f1-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/9b2be037-4f58-43ea-868e-271c279dc743-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/a0399370-8015-4ea2-8045-197ceb023212-2160-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/e98f0b6f-4155-47d5-baed-6d2c2cf2d90c-1080-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/35543235-7dc7-43cc-a89f-c7178d94395d-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/9457c926-898d-45a1-8d40-b8405e12bc3d-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/1e1b6768-3020-40ca-a2d1-d9be904d5e1f-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="2160" fileSize="295806454" url="https://media.tube.tchncs.de/videos/6377cbe2-ee47-49f2-a2b8-c1f2cbcc9d4b-2160.mp4" framerate="30" duration="126" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="94293041" url="https://media.tube.tchncs.de/videos/41067a8f-7754-4d99-92ef-5fea807d6ae1-1080.mp4" framerate="30" duration="126" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="24689976" url="https://media.tube.tchncs.de/videos/da25086a-5423-440e-bbf5-d086c756bb28-480.mp4" framerate="30" duration="126" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="18225552" url="https://media.tube.tchncs.de/videos/33d3383e-2c7b-4e01-a66f-0dae15f79ed3-360.mp4" framerate="30" duration="126" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="3053921" url="https://media.tube.tchncs.de/videos/9609050a-abfb-48d9-b355-7ebab13766f1-0.mp4" framerate="0" duration="126" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="2160" fileSize="295765036" url="https://media.tube.tchncs.de/streaming-playlists/hls/80dd2a79-b5e3-4bb2-87eb-68b6a79146e3/da2d8b55-55d6-4f6e-9a40-4d49ede7094e-2160-fragmented.mp4" framerate="30" duration="126" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="94249231" url="https://media.tube.tchncs.de/streaming-playlists/hls/80dd2a79-b5e3-4bb2-87eb-68b6a79146e3/2f5b2f80-37bd-43fc-8224-6272a252e7ad-1080-fragmented.mp4" framerate="30" duration="126" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="24645206" url="https://media.tube.tchncs.de/streaming-playlists/hls/80dd2a79-b5e3-4bb2-87eb-68b6a79146e3/dec5569d-c60d-4c25-9748-1b86fd04d1fb-480-fragmented.mp4" framerate="30" duration="126" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="18182006" url="https://media.tube.tchncs.de/streaming-playlists/hls/80dd2a79-b5e3-4bb2-87eb-68b6a79146e3/90c25a5c-98d8-4862-b278-846b69f919d4-360-fragmented.mp4" framerate="30" duration="126" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="3066711" url="https://media.tube.tchncs.de/streaming-playlists/hls/80dd2a79-b5e3-4bb2-87eb-68b6a79146e3/6515c9b3-7897-48b8-ad18-6a4960a301f6-0-fragmented.mp4" framerate="0" duration="126" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/93f2ce05-7b8a-48fe-9b8f-2b9be95321a4.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Dokumentation unserer Wiederaufforstung</media:title>
+            <media:description type="plain">Mit Ihrer Hilfe konnte dieser Wald geschaffen werden! Sie sehen einen etwa 15 Jahre alten Regenwald. Pionierbäume wurden erhalten, dazwischen kommen die von uns gepflanzten Bäume empor. Markant sind die Waldmandelbäume mit gelblichen Blättern ode...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Webinaire Oasis  la gestion des eaux pluviales]]></title>
+            <link>https://framatube.org/w/fQMrgCCDw2aib1eFpxfTJv</link>
+            <guid>https://framatube.org/w/fQMrgCCDw2aib1eFpxfTJv</guid>
+            <pubDate>Tue, 20 Oct 2026 14:14:03 GMT</pubDate>
+            <description><![CDATA[Nos vies dépendent littéralement de l'eau, entre la sécheresse de l'été et les inondations d'automne, l'eau est plus que jamais un sujet critique. D'ailleurs, un millimètre de pluie tombé sur un hectare, cela fait plutôt 10, 100 ou 1 000 mètres...]]></description>
+            <content:encoded><![CDATA[<p>Nos vies dépendent littéralement de l'eau, entre la sécheresse de l'été et les inondations d'automne, l'eau est plus que jamais un sujet critique.</p>
+<p>D'ailleurs, un millimètre de pluie tombé sur un hectare, cela fait plutôt 10, 100 ou 1 000 mètres cubes ?</p>
+<p>Que vous connaissiez ces réponses ou non, on vous invite à venir à la rencontre des oasis du réseau qui s'engagent pour reprendre la main sur le cycle de l'eau à l'échelle de leur site, avec :</p>
+<ul>
+<li>Romain et Rémy de Grain&amp;Sens</li>
+<li>Patrick de la Maison autonome</li>
+<li>Abdul de Little Wild</li>
+</ul>
+]]></content:encoded>
+            <dc:creator>Coopérative Oasis</dc:creator>
+            <enclosure length="765557658" type="video/mp4" url="https://framatube.org/download/videos/generate/782fa497-4654-4659-8149-4e640ee9b88d?videoFileIds=1661170"/>
+            <media:community>
+                <media:statistics views="11"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/fQMrgCCDw2aib1eFpxfTJv"/>
+            <media:player url="https://framatube.org/w/fQMrgCCDw2aib1eFpxfTJv"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ad37a1c4-f64f-42f5-9900-a38b34fc1ac3-1200-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/abe846cd-bf77-4637-8cf0-7c77094f8068-1080-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/f6b68538-c5a4-4789-be58-880382f0372e-720-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/45502039-67dd-436d-8a68-0d1f50d5611e-360-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1200" fileSize="765557658" url="https://video.colibris-outilslibres.org/static/streaming-playlists/hls/782fa497-4654-4659-8149-4e640ee9b88d/c932278c-a239-45d8-898e-24c174beb3d5-1200-fragmented.mp4" framerate="25" duration="4604" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="744983669" url="https://video.colibris-outilslibres.org/static/streaming-playlists/hls/782fa497-4654-4659-8149-4e640ee9b88d/9ce4bee4-c47d-47e6-bfd7-1c4685483ef6-1080-fragmented.mp4" framerate="25" duration="4604" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="522066636" url="https://video.colibris-outilslibres.org/static/streaming-playlists/hls/782fa497-4654-4659-8149-4e640ee9b88d/91ad95e4-0e40-4235-b655-36b5027bf167-720-fragmented.mp4" framerate="25" duration="4604" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="212717867" url="https://video.colibris-outilslibres.org/static/streaming-playlists/hls/782fa497-4654-4659-8149-4e640ee9b88d/e11a8b18-60fc-49ea-856a-5bb2d1d591fc-360-fragmented.mp4" framerate="25" duration="4604" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/8e0a91ec-5750-4d09-aea4-0f8bea634017.jpg" height="480" width="850"/>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/a17b84a2-ffbc-4964-b731-981a228c0c4f.jpg" height="157" width="280"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Webinaire Oasis  la gestion des eaux pluviales</media:title>
+            <media:description type="plain">Nos vies dépendent littéralement de l'eau, entre la sécheresse de l'été et les inondations d'automne, l'eau est plus que jamais un sujet critique. D'ailleurs, un millimètre de pluie tombé sur un hectare, cela fait plutôt 10, 100 ou 1 000 mètres...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Huge SEQUENCER improvements, PROJECTS in Blender 5.3! - Blender Today LIVE #291]]></title>
+            <link>https://framatube.org/w/9UhsEGd8vM4PTtg6bphpEM</link>
+            <guid>https://framatube.org/w/9UhsEGd8vM4PTtg6bphpEM</guid>
+            <pubDate>Tue, 20 Oct 2026 10:45:36 GMT</pubDate>
+            <description><![CDATA[What's New Changelog and Q&amp;A: https://devtalk.blender.org/t/blender-today-291-huge-sequencer-improvements-projects-in-blender-5-3/45975?sort=old BlenderToday is a live show highlighting the latest news in Blender development, the community, and...]]></description>
+            <content:encoded><![CDATA[<p>What's New Changelog and Q&amp;A: <a href="https://devtalk.blender.org/t/blender-today-291-huge-sequencer-improvements-projects-in-blender-5-3/45975?sort=old" target="_blank" rel="noopener noreferrer">https://devtalk.blender.org/t/blender-today-291-huge-sequencer-improvements-projects-in-blender-5-3/45975?sort=old</a></p>
+BlenderToday is a live show highlighting the latest news in Blender development, the community, and Q&amp;A. Streaming from the Blender HQ in Amsterdam since 2018, hosted by Pablo Vazquez (Senior Product Designer at Blender).
+<p>0:00:00 Intro<br />
+0:00:25 Hola!<br />
+0:09:33 Animation<br />
+0:09:58 Assets<br />
+0:13:13 Camera<br />
+0:14:36 Compositor<br />
+0:18:15 Core<br />
+0:19:32 Extensions<br />
+0:24:04 Geometry Nodes<br />
+0:29:04 GHOST<br />
+0:31:02 I/O<br />
+0:36:02 Modeling<br />
+0:40:10 Nodes<br />
+0:44:10 Outliner<br />
+0:44:53 Paint<br />
+0:47:00 Projects<br />
+0:55:06 Python<br />
+0:55:26 Sculpt<br />
+0:56:40 User Interface<br />
+1:08:03 UV<br />
+1:11:43 Video Sequencer<br />
+1:29:20 Q&amp;A<br />
+1:45:29 Outro</p>
+]]></content:encoded>
+            <dc:creator>Blender</dc:creator>
+            <enclosure length="944798193" type="video/mp4" url="https://framatube.org/download/videos/generate/4815edd4-2867-412b-86e6-da69b177c7f5?videoFileIds=1661146"/>
+            <media:community>
+                <media:statistics views="49"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/9UhsEGd8vM4PTtg6bphpEM"/>
+            <media:player url="https://framatube.org/w/9UhsEGd8vM4PTtg6bphpEM"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/f9e7a8a1-e9da-4555-96c2-27f39a8c6b5f-1080.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/f3b8c238-1fd5-4066-a79c-8b44079cfea0-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/a0fba14f-d237-4094-a488-1fb9985c7b7a-0.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="944798193" url="https://video.blender.org/object-storage/web_videos/b7d5b5a8-1623-4749-a609-1e5328f0428e-1080.mp4" framerate="30" duration="6488" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="428330626" url="https://video.blender.org/object-storage/web_videos/d3055ac2-bbdd-460a-be8f-b7c9ec98acdb-480.mp4" framerate="30" duration="6488" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="104928219" url="https://video.blender.org/object-storage/web_videos/9504158f-89ff-43cc-8cff-0121e71eb49c-0.mp4" framerate="0" duration="6488" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/438e361a-38df-4a23-ba0f-cdf6c14143c3.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Huge SEQUENCER improvements, PROJECTS in Blender 5.3! - Blender Today LIVE #291</media:title>
+            <media:description type="plain">What's New Changelog and Q&amp;A: https://devtalk.blender.org/t/blender-today-291-huge-sequencer-improvements-projects-in-blender-5-3/45975?sort=old BlenderToday is a live show highlighting the latest news in Blender development, the community, and...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[My Teammates Can't Dream (But they sure can hallucinate)]]></title>
+            <link>https://framatube.org/w/eaXY5ikTFyx3CiR7hVvCEr</link>
+            <guid>https://framatube.org/w/eaXY5ikTFyx3CiR7hVvCEr</guid>
+            <pubDate>Tue, 20 Oct 2026 07:07:55 GMT</pubDate>
+            <description><![CDATA[We are rapidly moving from AI as a tool to AI as a participant. Agentic systems now write code, review designs, raise flags, and hold context across long-running tasks. We are, whether we intend it or not, building teams that include non-human ...]]></description>
+            <content:encoded><![CDATA[<p>We are rapidly moving from AI as a tool to AI as a participant.</p>
+<p>Agentic systems now write code, review designs, raise flags, and hold context across long-running tasks. We are, whether we intend it or not, building teams that include non-human members.</p>
+<p>But what is a team, really? Not a group. Not a workforce. A team is something older and stranger. Perhaps it begins with family, with the commitment to show up even when it is costly, with the shared meaning that makes humans build, play, march, dance, and sacrifice together.</p>
+<p>In this episode, Avraham Poupko and Ralf D. Müller explore what it actually means for an AI to be a teammate rather than a tool.</p>
+]]></content:encoded>
+            <dc:creator>Software Architektur im Stream</dc:creator>
+            <category>Science &amp; Technology</category>
+            <enclosure length="578036694" type="video/mp4" url="https://framatube.org/download/videos/generate/6aaafcbd-ea3e-4221-ac9d-c30ac600879d?videoFileIds=1661134"/>
+            <media:community>
+                <media:statistics views="11"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/eaXY5ikTFyx3CiR7hVvCEr"/>
+            <media:player url="https://framatube.org/w/eaXY5ikTFyx3CiR7hVvCEr"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/437a1e76-75df-40fa-8a96-8a32818dfbcd-720.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/fc99daff-b03a-4ba7-8885-472eb44c7336-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/7d5f531e-1ef8-4dc9-a5eb-bfe10c93932c-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/1be1dd30-b32b-4120-90f6-c00bfb104138-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/49a91122-22ca-4ac7-80a2-69555d369918-720-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ae100068-70ba-4170-8832-f521eb0dbc2d-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/00460aa0-a5fb-455b-8ceb-468691bf3327-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/3daccda1-ec13-41ba-b8fd-60cf303fbbca-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="578036694" url="https://media.tube.tchncs.de/videos/ca01b7fe-5911-4213-95e0-ac7fb216a316-720.mp4" framerate="30" duration="3829" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="307193512" url="https://media.tube.tchncs.de/videos/e97a544e-2f7e-4129-a23b-5ec4c572bc43-480.mp4" framerate="30" duration="3829" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="240091647" url="https://media.tube.tchncs.de/videos/690ecf44-6714-4b8d-9c0f-565dffe9991c-360.mp4" framerate="30" duration="3829" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="109649781" url="https://media.tube.tchncs.de/videos/d2e460d3-6cc4-4883-95c5-694dcdcb4d89-0.mp4" framerate="0" duration="3829" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="576294068" url="https://media.tube.tchncs.de/streaming-playlists/hls/6aaafcbd-ea3e-4221-ac9d-c30ac600879d/19312303-8262-4889-902d-556f0481c2ba-720-fragmented.mp4" framerate="30" duration="3829" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="305489918" url="https://media.tube.tchncs.de/streaming-playlists/hls/6aaafcbd-ea3e-4221-ac9d-c30ac600879d/aac8a26e-266d-4ba5-9353-376ec4b55648-480-fragmented.mp4" framerate="30" duration="3829" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="238392149" url="https://media.tube.tchncs.de/streaming-playlists/hls/6aaafcbd-ea3e-4221-ac9d-c30ac600879d/ae484322-b807-4092-871a-38802f93cc09-360-fragmented.mp4" framerate="30" duration="3829" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="109801523" url="https://media.tube.tchncs.de/streaming-playlists/hls/6aaafcbd-ea3e-4221-ac9d-c30ac600879d/8182a84a-e204-421d-aad6-a489b4bfc0d4-0-fragmented.mp4" framerate="0" duration="3829" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/e9823c00-16b4-4628-be41-4db5ee0d5812.png" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">My Teammates Can't Dream (But they sure can hallucinate)</media:title>
+            <media:description type="plain">We are rapidly moving from AI as a tool to AI as a participant. Agentic systems now write code, review designs, raise flags, and hold context across long-running tasks. We are, whether we intend it or not, building teams that include non-human ...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Spiele von lokalen KIs programmieren lassen]]></title>
+            <link>https://framatube.org/w/fsAxvMhJTFX4KZizb9JFg7</link>
+            <guid>https://framatube.org/w/fsAxvMhJTFX4KZizb9JFg7</guid>
+            <pubDate>Mon, 19 Oct 2026 12:37:17 GMT</pubDate>
+            <description><![CDATA[Ich habe verschiedene lokale KIs bzw. große Sprachmodelle (Muse Glimmer und Gwen 3.6/3.8) dazu verwendet, Spiele(-klassiker) mit Python zu programmieren. In diesem Video seht Ihr, was dabei herausgekommen ist und wie ich die Spiele – soweit es mög...]]></description>
+            <content:encoded><![CDATA[<p>Ich habe verschiedene lokale KIs bzw. große Sprachmodelle (Muse Glimmer und Gwen 3.6/3.8) dazu verwendet, Spiele(-klassiker) mit Python zu programmieren. In diesem Video seht Ihr, was dabei herausgekommen ist und wie ich die Spiele – soweit es möglich ist – anspiele. Mit dabei sind Snake, Asteroids und soetwas ähnliches wie Doom. Zum Abschluß gibt es noch ein komplexeres retrofuturistisches Jump’n’Run im Art déco Stil, woran sich die lokalen Modelle allerdings ihre digitalen Zähne ausbeißen.</p>
+<ul>
+<li>Folien, Links, etc.: <a href="https://goos-habermann.de/weisheit-10292-Spiele-von-lokalen-KIs-programmieren-lassen" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/weisheit-10292-Spiele-von-lokalen-KIs-programmieren-lassen</a></li>
+</ul>
+<p>00:22 KI-Vorstellung: Muse Glimmer<br />
+01:55 KI-Vorstellung: Qwen 3.6 und 3.8<br />
+03:42 Programmieren lassen: Snake<br />
+04:54 Angespielt: Snake Qwen 3.8<br />
+05:39 Angespielt: Snake Muse Glimmer<br />
+06:05 Programmieren lassen: Asteroids<br />
+06:49 Angespielt: Asteroids Qwen 3.8<br />
+08:22 Angespielt: Asteroids Muse Glimmer<br />
+09:20 Programmieren lassen: Doom<br />
+11:29 Angespielt: Doom Qwen 3.6<br />
+12:55 Angespielt: Doom Qwen 3.8<br />
+14:49 Angespielt: Doom Muse Glimmer<br />
+15:20 Programmieren lassen: Art déco Jump&amp;Run<br />
+16:46 Angespielt: Art déco Jump&amp;Run Qwen 3.8 Version 1<br />
+18:05 Angespielt: Art déco Jump&amp;Run Qwen 3.8 Version 2<br />
+20:11 Angespielt: Art déco Jump&amp;Run ChatGPT<br />
+22:14 Abschließende Worte und Verabschiedung</p>
+<p>=== Dienstleistungen und Hilfe ===</p>
+<p>Meine Arbeit unterstützen/Video sponsoren: <a href="https://goos-habermann.de/Sponsor" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/Sponsor</a><br />
+Beratung und Support zum Thema: <a href="https://goos-habermann.de/Videosupport" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/Videosupport</a><br />
+Workshops und Schulungen: <a href="https://goos-habermann.de/Schulung" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/Schulung</a><br />
+Vortrag buchen: <a href="https://goos-habermann.de/Wunschvideo" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/Wunschvideo</a><br />
+Softwareentwicklung (z.B. zu m23): <a href="https://goos-habermann.de/Entwicklung" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/Entwicklung</a><br />
+Dienstleistungen buchen und (Beratungs-)Terminvereinbarung: <a href="https://goos-habermann.de" target="_blank" rel="noopener noreferrer">https://goos-habermann.de</a><br />
+Softwareverteilungssystem m23: <a href="https://m23.goos-habermann.de" target="_blank" rel="noopener noreferrer">https://m23.goos-habermann.de</a> und <a href="http://m23.sf.net" target="_blank" rel="noopener noreferrer">http://m23.sf.net</a></p>
+<p>=== Mehr zu "Nicht der Weisheit letzter Schluß" ===</p>
+<p>Meine Arbeit unterstützen: <a href="https://weisheit.goos-habermann.de/Videosponsor" target="_blank" rel="noopener noreferrer">https://weisheit.goos-habermann.de/Videosponsor</a><br />
+Projektseite: <a href="https://weisheit.goos-habermann.de" target="_blank" rel="noopener noreferrer">https://weisheit.goos-habermann.de</a><br />
+YouTube: <a href="https://youtube.com/@nichtderweisheit" target="_blank" rel="noopener noreferrer">https://youtube.com/@nichtderweisheit</a><br />
+PeerTube: <a href="https://tube.tchncs.de/c/ndwls" target="_blank" rel="noopener noreferrer">https://tube.tchncs.de/c/ndwls</a><br />
+Mastodon: <a href="https://mastodon.social/@LinuxLeben" target="_blank" rel="noopener noreferrer">https://mastodon.social/@LinuxLeben</a><br />
+RSS: <a href="https://goos-habermann.de/ndwls-rss.xml" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/ndwls-rss.xml</a></p>
+<p>=== Mehr zu mir woanders ===</p>
+<p>Kurzanleitungen und Howtos: <a href="https://goos-habermann.de/kurzanleitungen" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/kurzanleitungen</a><br />
+Freie Projekte "Dodger Tools": <a href="https://goos-habermann.de/dodger-tools" target="_blank" rel="noopener noreferrer">https://goos-habermann.de/dodger-tools</a><br />
+Kieler Open Source und Linux Tage: <a href="https://www.kielux.de" target="_blank" rel="noopener noreferrer">https://www.kielux.de</a><br />
+Jean und Hauke Show: <a href="https://www.youtube.com/c/LinuxGuides" target="_blank" rel="noopener noreferrer">https://www.youtube.com/c/LinuxGuides</a></p>
+<p>WARNUNG: Wie auch bei meinen Howtos/Kurzanleitungen gilt: Bei jedem Schritt kann es<br />
+zum kompletten Datenverlust und/oder Zerstörung Eurer Hardware kommen.<br />
+Alle Angaben ohne Gewähr! Haftung ausgeschlossen!</p>
+]]></content:encoded>
+            <dc:creator>Nicht der Weisheit letzter Schluß</dc:creator>
+            <category>Science &amp; Technology</category>
+            <enclosure length="160436395" type="video/mp4" url="https://framatube.org/download/videos/generate/7516913d-a33b-46ca-9159-8a5523797af8?videoFileIds=1661089"/>
+            <media:community>
+                <media:statistics views="21"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/fsAxvMhJTFX4KZizb9JFg7"/>
+            <media:player url="https://framatube.org/w/fsAxvMhJTFX4KZizb9JFg7"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/4752dae3-b840-4641-8ddf-3daefd096030-1080.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/f0c9c9a5-77c6-4f51-9174-7daefd523367-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/a1925186-2fc3-44f7-940b-5dc2751342e5-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/926b838e-fd71-44ad-86bd-117b90a84d20-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/4282bd3b-96b9-4fef-a6a1-e134d9a56b71-1080-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/c7f75ee1-3d0c-49c9-b29a-7d95d413ddbf-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ecd17ac9-b54f-4703-bddb-04d29d4316aa-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/5cc346aa-81c7-4509-8b47-d3e78bd68b60-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="160436395" url="https://media.tube.tchncs.de/videos/d4c26d25-28b9-4a7c-a1aa-c13ceea5f270-1080.mp4" framerate="30" duration="1398" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="86005298" url="https://media.tube.tchncs.de/videos/f1f1aebc-a456-4ca6-b03d-7c0ff6afa3bf-480.mp4" framerate="30" duration="1398" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="73815863" url="https://media.tube.tchncs.de/videos/6dfd3e11-ef71-4e6f-b885-d6a6bc3f2277-360.mp4" framerate="30" duration="1398" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="43897069" url="https://media.tube.tchncs.de/videos/2cfcfa3f-6c51-421e-837a-33e645b6bab6-0.mp4" framerate="0" duration="1398" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="159944325" url="https://media.tube.tchncs.de/streaming-playlists/hls/7516913d-a33b-46ca-9159-8a5523797af8/27e32600-6411-43fa-8dea-513ad9185874-1080-fragmented.mp4" framerate="30" duration="1398" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="85472396" url="https://media.tube.tchncs.de/streaming-playlists/hls/7516913d-a33b-46ca-9159-8a5523797af8/ece01d8e-fea9-4d94-9ecb-8fa7935bfcf2-480-fragmented.mp4" framerate="30" duration="1398" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="73270849" url="https://media.tube.tchncs.de/streaming-playlists/hls/7516913d-a33b-46ca-9159-8a5523797af8/4cc8feec-063c-490e-a7d4-1d3f386fd0eb-360-fragmented.mp4" framerate="30" duration="1398" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="43952743" url="https://media.tube.tchncs.de/streaming-playlists/hls/7516913d-a33b-46ca-9159-8a5523797af8/397170f8-7a83-4418-8ea5-ab5ceaf59805-0-fragmented.mp4" framerate="0" duration="1398" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/5a11c23d-2cc1-4be3-a75b-9ce73cf222af.png" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Spiele von lokalen KIs programmieren lassen</media:title>
+            <media:description type="plain">Ich habe verschiedene lokale KIs bzw. große Sprachmodelle (Muse Glimmer und Gwen 3.6/3.8) dazu verwendet, Spiele(-klassiker) mit Python zu programmieren. In diesem Video seht Ihr, was dabei herausgekommen ist und wie ich die Spiele – soweit es mög...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Teaser Conférence ARTiculée "De l'Art face aux Enjeux Socio-Ecologiques"]]></title>
+            <link>https://framatube.org/w/f3bKqY5W9NdgQXKjEsGxAT</link>
+            <guid>https://framatube.org/w/f3bKqY5W9NdgQXKjEsGxAT</guid>
+            <pubDate>Mon, 19 Oct 2026 12:27:26 GMT</pubDate>
+            <description><![CDATA[Une performance artistique où les arts se joignent aux sciences pour aborder des questions telles que : Pourquoi parler d’enjeux socio-écologiques ? Qu’est-ce que L’art ? Comment peut-il répondre à ces enjeux ? En quoi est-il ess...]]></description>
+            <content:encoded><![CDATA[<p>Une <strong>performance</strong> artistique où les <strong>arts</strong> se joignent aux <strong>sciences</strong> pour aborder des questions telles que :<br />
+Pourquoi parler d’<strong>enjeux socio-écologiques</strong> ? Qu’est-ce que L’art ? Comment peut-il répondre à ces enjeux ? En quoi est-il essentiel ?</p>
+<p>Valem sculpte sur scène tout en convoquant des disciplines telles que la philosophie, l’économie, les<br />
+sciences écologiques... Elle partage avec passion sa propre expérience ainsi que des exemples d’artistes<br />
+engagés.</p>
+]]></content:encoded>
+            <dc:creator>Valem</dc:creator>
+            <category>Art</category>
+            <enclosure length="23968620" type="video/mp4" url="https://framatube.org/download/videos/generate/71ae0d8f-0ad9-4249-beec-67d5d4ace5e3?videoFileIds=1661083"/>
+            <media:community>
+                <media:statistics views="15"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/f3bKqY5W9NdgQXKjEsGxAT"/>
+            <media:player url="https://framatube.org/w/f3bKqY5W9NdgQXKjEsGxAT"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/277341f4-2d6b-43a2-83d4-731da5fa7dd8-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ea776176-e97a-4a82-a4c1-920fea1a99fb-720-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/7a021092-41d3-4de0-8f08-289976061e62-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/5e02b110-4123-460e-a4d3-f0f2de73730b-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/1af92265-c2d1-402a-8175-8a82d96c2b99-240-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/4278a069-e4f0-4bfd-94b1-51d25b729b74-144-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/6f0458e1-6ff1-4694-98d5-a7f487e70bab-0-hls.torrent" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="4843392" url="https://aperi.tube/static/web-videos/0cff4913-51d1-443d-a070-2c18974571b0-0.mp4" framerate="0" duration="120" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="23968620" url="https://aperi.tube/static/streaming-playlists/hls/71ae0d8f-0ad9-4249-beec-67d5d4ace5e3/13accb85-ec5f-4f16-bc58-14b0e7f4063c-720-fragmented.mp4" framerate="50" duration="120" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="10662762" url="https://aperi.tube/static/streaming-playlists/hls/71ae0d8f-0ad9-4249-beec-67d5d4ace5e3/a9a0f589-cf31-4307-a8c8-1d1a6cffebc0-480-fragmented.mp4" framerate="25" duration="120" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="7854910" url="https://aperi.tube/static/streaming-playlists/hls/71ae0d8f-0ad9-4249-beec-67d5d4ace5e3/543ddedd-6bd6-4544-8a09-b9a42b3c191e-360-fragmented.mp4" framerate="25" duration="120" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="240" fileSize="5326717" url="https://aperi.tube/static/streaming-playlists/hls/71ae0d8f-0ad9-4249-beec-67d5d4ace5e3/cd0c396e-dc76-44eb-a7eb-dcfe350ed628-240-fragmented.mp4" framerate="25" duration="120" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="144" fileSize="3666434" url="https://aperi.tube/static/streaming-playlists/hls/71ae0d8f-0ad9-4249-beec-67d5d4ace5e3/a58fb613-24cf-432f-ae0d-947a6e619a65-144-fragmented.mp4" framerate="25" duration="120" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="4848230" url="https://aperi.tube/static/streaming-playlists/hls/71ae0d8f-0ad9-4249-beec-67d5d4ace5e3/c6dadb22-87cb-44e4-bf0e-2d8b4c5c5c27-0-fragmented.mp4" framerate="0" duration="120" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/4ddb504b-e673-4fe7-b968-82f56113ccae.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Teaser Conférence ARTiculée "De l'Art face aux Enjeux Socio-Ecologiques"</media:title>
+            <media:description type="plain">Une performance artistique où les arts se joignent aux sciences pour aborder des questions telles que : Pourquoi parler d’enjeux socio-écologiques ? Qu’est-ce que L’art ? Comment peut-il répondre à ces enjeux ? En quoi est-il ess...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Zwischenfazit meines Mimentanen Status  #Archery #Bogenbau #Bogenschießen #Bogensport #DIY]]></title>
+            <link>https://framatube.org/w/6RDMkcKS6663rJMhDL4ysf</link>
+            <guid>https://framatube.org/w/6RDMkcKS6663rJMhDL4ysf</guid>
+            <pubDate>Mon, 19 Oct 2026 11:41:04 GMT</pubDate>
+            <description><![CDATA[Nach einer langen Pause, geht es langsam wieder aufwärts mit mir. Das bedeutet auch, das ich mal die aktuelle Situation beleuchten muss und ein paar Entscheidungen anstehen. Dazu nehme ich euch heute mit in den Bastelkeller... #Archery #Bogenb...]]></description>
+            <content:encoded><![CDATA[<p>Nach einer langen Pause, geht es langsam wieder aufwärts mit mir.<br />
+Das bedeutet auch, das ich mal die aktuelle Situation beleuchten muss und ein paar Entscheidungen anstehen. Dazu nehme ich euch heute mit in den Bastelkeller...</p>
+<p>#Archery #Bogenbau #Bogenschießen #Bogensport #DIY #Fletcher #Freizeit #Langbogen #Longbow #Primitivbogen #Selfbow #Sport #Werkstatt @diy@tupambae.org @archery@feddit.org @archery@lemmy.world</p>
+]]></content:encoded>
+            <dc:creator>TreffNix - Archery Time </dc:creator>
+            <category>How To</category>
+            <enclosure length="342113355" type="video/mp4" url="https://framatube.org/download/videos/generate/2f6c6bf7-ce24-4bf0-8456-1a5c46e5484a?videoFileIds=1661074"/>
+            <media:community>
+                <media:statistics views="20"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/6RDMkcKS6663rJMhDL4ysf"/>
+            <media:player url="https://framatube.org/w/6RDMkcKS6663rJMhDL4ysf"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/81fa47a5-cfc2-4b43-8dce-0cae34284362-720.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ea0f202e-e473-43ac-80a2-066cce6456c0-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/a7838359-15ee-463c-b4e6-79d3404ce538-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/66bb75d2-2e87-4bf5-98a5-92cde296afd6-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/8d7eabd1-828c-4ec1-8813-dc471de12dbe-720-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/d4d6fdfb-1c21-496b-bb68-bf0cb10496c0-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/33ff74c4-1de6-4491-84fb-153b5420e440-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/c0e03e73-6d67-4f1e-8e7a-43a36d53d445-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="342113355" url="https://media.tube.tchncs.de/videos/30ac47db-1670-4837-bcff-b9ed82dfdb66-720.mp4" framerate="50" duration="902" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="119764767" url="https://media.tube.tchncs.de/videos/27034801-0dd5-4a61-bb24-5d219d925a37-480.mp4" framerate="25" duration="902" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="85498356" url="https://media.tube.tchncs.de/videos/2ee7733d-41dc-4163-a32e-74925e9add4b-360.mp4" framerate="25" duration="902" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="18356965" url="https://media.tube.tchncs.de/videos/adab4f9b-6353-4e23-a24d-0ad4059f36bd-0.mp4" framerate="0" duration="902" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="341780445" url="https://media.tube.tchncs.de/streaming-playlists/hls/2f6c6bf7-ce24-4bf0-8456-1a5c46e5484a/e82ed10b-4665-43f9-88c9-7c9014434cf2-720-fragmented.mp4" framerate="50" duration="902" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="119639797" url="https://media.tube.tchncs.de/streaming-playlists/hls/2f6c6bf7-ce24-4bf0-8456-1a5c46e5484a/f497e08d-4cbd-419c-b79d-3a36d977b07e-480-fragmented.mp4" framerate="25" duration="902" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="85374254" url="https://media.tube.tchncs.de/streaming-playlists/hls/2f6c6bf7-ce24-4bf0-8456-1a5c46e5484a/2ae180dd-a979-4e4f-9d92-4fd36dc7b0ad-360-fragmented.mp4" framerate="25" duration="902" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="18392083" url="https://media.tube.tchncs.de/streaming-playlists/hls/2f6c6bf7-ce24-4bf0-8456-1a5c46e5484a/0963600f-1b92-4ae4-90bc-53d02c8a78da-0-fragmented.mp4" framerate="0" duration="902" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/58612c9d-7874-4bad-bbd1-33bf057f6e23.png" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Zwischenfazit meines Mimentanen Status  #Archery #Bogenbau #Bogenschießen #Bogensport #DIY</media:title>
+            <media:description type="plain">Nach einer langen Pause, geht es langsam wieder aufwärts mit mir. Das bedeutet auch, das ich mal die aktuelle Situation beleuchten muss und ein paar Entscheidungen anstehen. Dazu nehme ich euch heute mit in den Bastelkeller... #Archery #Bogenb...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[The Anglosphere Conformists Are Not Mad Enough Or Inconvenienced Enough? 😅]]></title>
+            <link>https://framatube.org/w/g8Z9fitca8Fgsqt4f3Rh3h</link>
+            <guid>https://framatube.org/w/g8Z9fitca8Fgsqt4f3Rh3h</guid>
+            <pubDate>Mon, 19 Oct 2026 10:52:22 GMT</pubDate>
+            <dc:creator>filter</dc:creator>
+            <category>News &amp; Politics</category>
+            <enclosure length="342938151" type="video/mp4" url="https://framatube.org/download/videos/generate/7a96805c-76b0-4e79-87de-a5d76bc7eb8c?videoFileIds=1661067"/>
+            <media:community>
+                <media:statistics views="12"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/g8Z9fitca8Fgsqt4f3Rh3h"/>
+            <media:player url="https://framatube.org/w/g8Z9fitca8Fgsqt4f3Rh3h"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/47f050ac-e4e1-4e9e-83fc-de34b80bf989-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/b91d222b-69b2-44ba-bc75-28ad28aeac3c-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/c2df61eb-8dd9-45f6-b82c-6d2087eac0fc-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/9e132a0f-c221-46e2-95b4-f3f3f2facfaa-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/d574b0ca-7d35-46a2-9715-dc33b8acb72c-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/6e1f037a-c086-444b-a576-719944999511-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="342938151" url="https://media.tube.tchncs.de/videos/a2cccb8e-955f-40a2-aead-6122c9130dbf-480.mp4" framerate="30" duration="6554" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="257175719" url="https://media.tube.tchncs.de/videos/d2e5d95f-9817-47b2-b5f8-e4af6cae20a6-360.mp4" framerate="30" duration="6554" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="104031967" url="https://media.tube.tchncs.de/videos/d19192e7-1edd-47f8-a8b7-744e6ea9cb64-0.mp4" framerate="0" duration="6554" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="340588473" url="https://media.tube.tchncs.de/streaming-playlists/hls/7a96805c-76b0-4e79-87de-a5d76bc7eb8c/25f1abac-9602-4dd8-83aa-bf17790906ab-480-fragmented.mp4" framerate="30" duration="6554" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="254735917" url="https://media.tube.tchncs.de/streaming-playlists/hls/7a96805c-76b0-4e79-87de-a5d76bc7eb8c/f73b59da-72ff-4318-a558-bb8fef79a691-360-fragmented.mp4" framerate="30" duration="6554" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="104673909" url="https://media.tube.tchncs.de/streaming-playlists/hls/7a96805c-76b0-4e79-87de-a5d76bc7eb8c/65e8d060-22de-4b26-ad2d-31213203bf4c-0-fragmented.mp4" framerate="0" duration="6554" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/4e312200-1f45-4ffb-a105-4027f7e131ad.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">The Anglosphere Conformists Are Not Mad Enough Or Inconvenienced Enough? 😅</media:title>
+        </item>
+        <item>
+            <title><![CDATA[hatniX spielt „World of Warcraft Forever“ Beta]]></title>
+            <link>https://framatube.org/w/9p4yCVBagDYDpqNkYfTRPj</link>
+            <guid>https://framatube.org/w/9p4yCVBagDYDpqNkYfTRPj</guid>
+            <pubDate>Mon, 19 Oct 2026 06:56:16 GMT</pubDate>
+            <description><![CDATA[Ich habe mir die Beta von „World of Warcraft Forever“ angesehen und lade euch zu einer kleinen Sightseeing-Tour ein, in der ich in Erinnerungen schwelge. Dabei spiele ich das Spiel mit Hilfe von GE-Proton 11-9 unter Linux (CachyOS, Plasma Desktop)...]]></description>
+            <content:encoded><![CDATA[<p>Ich habe mir die Beta von „World of Warcraft Forever“ angesehen und lade euch zu einer kleinen Sightseeing-Tour ein, in der ich in Erinnerungen schwelge. Dabei spiele ich das Spiel mit Hilfe von GE-Proton 11-9 unter Linux (CachyOS, Plasma Desktop).</p>
+<p>Webseite: <a href="https://worldofwarcraft.blizzard.com/de-de/forever" target="_blank" rel="noopener noreferrer">https://worldofwarcraft.blizzard.com/de-de/forever</a></p>
+
+<p>Meine Webseite: <a href="https://hatnix.net" target="_blank" rel="noopener noreferrer">https://hatnix.net</a></p>
+]]></content:encoded>
+            <dc:creator>haTube</dc:creator>
+            <category>Gaming</category>
+            <enclosure length="3120088890" type="video/mp4" url="https://framatube.org/download/videos/generate/4401695d-711f-4629-a8a1-a73fc3c30234?videoFileIds=1661059"/>
+            <media:community>
+                <media:statistics views="29"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/9p4yCVBagDYDpqNkYfTRPj"/>
+            <media:player url="https://framatube.org/w/9p4yCVBagDYDpqNkYfTRPj"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/6ad7905b-59fd-4d22-b2a5-403f6a209c10-1080.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ce2f4ba6-883d-4d77-847a-8ae0399f8958-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/f6c1c012-5eec-4fb2-bef3-90c07f8b9f7c-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/f097c0ea-8d9a-4aab-9585-3feb4de5b1fc-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/6e2ad033-4f12-4fda-81a9-29df828f93be-1080-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ad00970d-ac21-4294-8196-1c944328b27f-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/d9b6adb5-9067-4b10-8eff-3461853a3a63-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/174248a9-8b2f-4a78-904e-cdb9ee08e19c-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="3120088890" url="https://media.tube.tchncs.de/videos/95292632-b821-4f22-92d0-857bea263c7e-1080.mp4" framerate="60" duration="6179" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="828673038" url="https://media.tube.tchncs.de/videos/23f08783-6f7f-4eef-a806-a86ac8be3eac-480.mp4" framerate="30" duration="6179" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="591585932" url="https://media.tube.tchncs.de/videos/db41441d-3379-4f71-b0c0-708320acfa20-360.mp4" framerate="30" duration="6179" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="149455249" url="https://media.tube.tchncs.de/videos/06a11378-da3c-4327-b379-ab49bbd51645-0.mp4" framerate="0" duration="6179" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="3114297072" url="https://media.tube.tchncs.de/streaming-playlists/hls/4401695d-711f-4629-a8a1-a73fc3c30234/11e02567-987f-45fd-a466-c137ad476a32-1080-fragmented.mp4" framerate="60" duration="6179" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="826106748" url="https://media.tube.tchncs.de/streaming-playlists/hls/4401695d-711f-4629-a8a1-a73fc3c30234/d786738d-619b-43cd-a60c-58aa910f0de0-480-fragmented.mp4" framerate="30" duration="6179" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="589022190" url="https://media.tube.tchncs.de/streaming-playlists/hls/4401695d-711f-4629-a8a1-a73fc3c30234/006114f2-9b2a-433f-b0c8-2d53ab22e5bd-360-fragmented.mp4" framerate="30" duration="6179" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="149701951" url="https://media.tube.tchncs.de/streaming-playlists/hls/4401695d-711f-4629-a8a1-a73fc3c30234/dde7b618-a3b9-4171-bed8-13d8309fabcb-0-fragmented.mp4" framerate="0" duration="6179" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/365bfc17-d269-47aa-983a-40083264c423.png" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">hatniX spielt „World of Warcraft Forever“ Beta</media:title>
+            <media:description type="plain">Ich habe mir die Beta von „World of Warcraft Forever“ angesehen und lade euch zu einer kleinen Sightseeing-Tour ein, in der ich in Erinnerungen schwelge. Dabei spiele ich das Spiel mit Hilfe von GE-Proton 11-9 unter Linux (CachyOS, Plasma Desktop)...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Proof of human - SPX6900]]></title>
+            <link>https://framatube.org/w/n5GPonSWDpUyWi6CCMJ2wS</link>
+            <guid>https://framatube.org/w/n5GPonSWDpUyWi6CCMJ2wS</guid>
+            <pubDate>Mon, 19 Oct 2026 06:28:54 GMT</pubDate>
+            <description><![CDATA[SPX6900 is Proof of human Credits https://www.reddit.com/u/ChampionshipSad9189]]></description>
+            <content:encoded><![CDATA[<p>SPX6900 is Proof of human</p>
+<p>Credits <a href="https://www.reddit.com/u/ChampionshipSad9189" target="_blank" rel="noopener noreferrer">https://www.reddit.com/u/ChampionshipSad9189</a></p>
+]]></content:encoded>
+            <dc:creator>aeon_kn channel</dc:creator>
+            <category>Activism</category>
+            <enclosure length="4158447" type="video/mp4" url="https://framatube.org/download/videos/generate/aab80a93-25d9-4e37-96d3-26db1014e782?videoFileIds=1661055"/>
+            <media:community>
+                <media:statistics views="8"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/n5GPonSWDpUyWi6CCMJ2wS"/>
+            <media:player url="https://framatube.org/w/n5GPonSWDpUyWi6CCMJ2wS"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/1236c1c7-1166-4770-96c2-89b1f41388e7-640.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/62981030-f737-4a18-825a-37ffe4feb4a4-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/e33d48fc-b6e4-426f-b76f-06c4a8d7928a-640-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/8a1c45c0-6c6e-49bf-9706-f3e31a14ed64-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="4158447" url="https://media.tube.tchncs.de/videos/c52806dc-506d-4cd6-aadc-63c2ff78a42a-360.mp4" framerate="30" duration="75" isDefault="true"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="1230357" url="https://media.tube.tchncs.de/videos/77bface4-d215-429b-aa9d-53bc1f42db60-0.mp4" framerate="0" duration="75" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="4127385" url="https://media.tube.tchncs.de/streaming-playlists/hls/aab80a93-25d9-4e37-96d3-26db1014e782/354086d2-c3e7-4543-b96e-1ffebc4a99ac-360-fragmented.mp4" framerate="30" duration="75" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="1238271" url="https://media.tube.tchncs.de/streaming-playlists/hls/aab80a93-25d9-4e37-96d3-26db1014e782/c2b120d0-4ed9-455f-9900-356a393a7265-0-fragmented.mp4" framerate="0" duration="75" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/803bac2c-db15-4eb5-82f6-4be7a25fa6b9.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Proof of human - SPX6900</media:title>
+            <media:description type="plain">SPX6900 is Proof of human Credits https://www.reddit.com/u/ChampionshipSad9189</media:description>
+        </item>
+        <item>
+            <title><![CDATA[They want us divided, they want us fighting - let's unite together]]></title>
+            <link>https://framatube.org/w/sEgE93GN1LM3SSBssnh4FC</link>
+            <guid>https://framatube.org/w/sEgE93GN1LM3SSBssnh4FC</guid>
+            <pubDate>Sun, 18 Oct 2026 16:24:35 GMT</pubDate>
+            <description><![CDATA[They want us divided, they want us fighting eachother and they dont want us to know the truth. It doesn’t matter if you left or right, white or black, male or female. The shared goal is to flip the system. Therefore we need a vessel, that vessel i...]]></description>
+            <content:encoded><![CDATA[<p>They want us divided, they want us fighting eachother and they dont want us to know the truth. It doesn’t matter if you left or right, white or black, male or female. The shared goal is to flip the system. Therefore we need a vessel, that vessel is spx6900</p>
+<p>Voice: Murad Mahmudov at FlipTheStockMarket podcast (<a href="https://www.youtube.com/live/97HJC4oohjI?si=Kbt_AECV0MJETlw5" target="_blank" rel="noopener noreferrer">https://www.youtube.com/live/97HJC4oohjI?si=Kbt_AECV0MJETlw5</a>)</p>
+<p>Putting it together: Solidsnake037 on X</p>
+]]></content:encoded>
+            <dc:creator>aeon_kn channel</dc:creator>
+            <category>Activism</category>
+            <enclosure length="23518889" type="video/mp4" url="https://framatube.org/download/videos/generate/d7e5848a-6304-49b9-b0ea-31c1eecd7f76?videoFileIds=1661047"/>
+            <media:community>
+                <media:statistics views="32"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/sEgE93GN1LM3SSBssnh4FC"/>
+            <media:player url="https://framatube.org/w/sEgE93GN1LM3SSBssnh4FC"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/021dae8e-898e-4bed-9622-d901d2d22cf1-700.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/50282955-4373-4414-b7f6-27739fedb476-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/2c2ab8f4-c774-4be2-b5ee-95341dbebafb-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/1660b015-064b-4b45-9663-10046c8701ae-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/45f701df-7992-4b6a-8ad2-9ccea532933f-700-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/7b64588e-0678-4356-807b-76ab34730e3a-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/5840a8db-1d30-4089-90cf-5daeb8979782-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/060aea7b-cc14-411a-b9bb-78f171327ff8-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="700" fileSize="23518889" url="https://media.tube.tchncs.de/videos/9895c4df-ec4c-4bf5-907e-2319e6666877-700.mp4" framerate="60" duration="208" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="20200582" url="https://media.tube.tchncs.de/videos/bd4bf7bd-4805-499a-a388-b93ff98ab387-480.mp4" framerate="30" duration="208" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="15082056" url="https://media.tube.tchncs.de/videos/63e37af1-99cc-44f7-973f-12cdd85e3ddb-360.mp4" framerate="30" duration="208" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="3368885" url="https://media.tube.tchncs.de/videos/29ab5a5a-cf28-4aed-8bc8-3384178d291b-0.mp4" framerate="0" duration="208" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="700" fileSize="23367035" url="https://media.tube.tchncs.de/streaming-playlists/hls/d7e5848a-6304-49b9-b0ea-31c1eecd7f76/c2de0aaa-7386-4c47-9e28-69f721538b00-700-fragmented.mp4" framerate="60" duration="208" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="20107932" url="https://media.tube.tchncs.de/streaming-playlists/hls/d7e5848a-6304-49b9-b0ea-31c1eecd7f76/4df642c3-ab0c-407a-91e9-c949012237f4-480-fragmented.mp4" framerate="30" duration="208" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="14990386" url="https://media.tube.tchncs.de/streaming-playlists/hls/d7e5848a-6304-49b9-b0ea-31c1eecd7f76/0f29e946-8aa6-4273-9a62-0d843a0ffc8a-360-fragmented.mp4" framerate="30" duration="208" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="3377275" url="https://media.tube.tchncs.de/streaming-playlists/hls/d7e5848a-6304-49b9-b0ea-31c1eecd7f76/b9784c90-45f8-4794-b002-7671c20014af-0-fragmented.mp4" framerate="0" duration="208" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/6cc720d3-f40f-4474-9554-b3366b54fdd1.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">They want us divided, they want us fighting - let's unite together</media:title>
+            <media:description type="plain">They want us divided, they want us fighting eachother and they dont want us to know the truth. It doesn’t matter if you left or right, white or black, male or female. The shared goal is to flip the system. Therefore we need a vessel, that vessel i...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[KDE Plasma 6.9: Suspending night color]]></title>
+            <link>https://framatube.org/w/nsRhNRi9SPXV9j7gz8e7aM</link>
+            <guid>https://framatube.org/w/nsRhNRi9SPXV9j7gz8e7aM</guid>
+            <pubDate>Sun, 18 Oct 2026 12:46:30 GMT</pubDate>
+            <description><![CDATA[Unfortunately the color temperature changes aren’t shown in this video, but trust me: something is actually visibly happening on a physical screen!]]></description>
+            <content:encoded><![CDATA[<p>Unfortunately the color temperature changes aren’t shown in this video, but trust me: something is actually visibly happening on a physical screen!</p>
+]]></content:encoded>
+            <dc:creator>s3nnet.de</dc:creator>
+            <category>Science &amp; Technology</category>
+            <enclosure length="736686" type="video/mp4" url="https://framatube.org/download/videos/generate/adcfa033-de9c-4dd0-b1c8-6789fa0a44e7?videoFileIds=1661029"/>
+            <media:community>
+                <media:statistics views="20"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/nsRhNRi9SPXV9j7gz8e7aM"/>
+            <media:player url="https://framatube.org/w/nsRhNRi9SPXV9j7gz8e7aM"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ea3dde12-7e50-476e-b40d-0262c34d63de-1260.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/6f66ef6a-724a-4333-9f56-cfcf94149a1d-1080.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/5cbba43a-ff79-422e-a5c7-5f07a5308c40-480.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/ce472791-fbc5-4726-9296-b36dea4fe41d-360.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/bff6ea57-7475-4033-a76e-e7337bc3cc48-1260-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/219fa35b-974f-43db-8bf6-2e5a7503e605-1080-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/daeb3e25-93c1-4b84-b04b-f6ab80fc48d4-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/fd3564a1-92a5-41fd-adb3-64b47619e62a-360-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1260" fileSize="736686" url="https://media.tube.tchncs.de/videos/d5dab38d-3b8d-4915-973c-ee0bc92b303d-1260.mp4" framerate="60" duration="18" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="583943" url="https://media.tube.tchncs.de/videos/c54d1d9d-c079-4da5-83c6-45eb860bf056-1080.mp4" framerate="60" duration="18" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="214526" url="https://media.tube.tchncs.de/videos/c98b8e28-eaef-469b-8e42-b276cf99f7ab-480.mp4" framerate="30" duration="18" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="151226" url="https://media.tube.tchncs.de/videos/53df731f-73ad-47f4-93ec-aaa4799a29aa-360.mp4" framerate="30" duration="18" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1260" fileSize="741158" url="https://media.tube.tchncs.de/streaming-playlists/hls/adcfa033-de9c-4dd0-b1c8-6789fa0a44e7/2487d82b-5d0c-4750-88a2-e9f9d0204c1f-1260-fragmented.mp4" framerate="60" duration="18" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="588383" url="https://media.tube.tchncs.de/streaming-playlists/hls/adcfa033-de9c-4dd0-b1c8-6789fa0a44e7/110b491d-8148-4bed-8495-4208692ede9a-1080-fragmented.mp4" framerate="60" duration="18" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="216942" url="https://media.tube.tchncs.de/streaming-playlists/hls/adcfa033-de9c-4dd0-b1c8-6789fa0a44e7/5d8df3aa-73aa-4899-b20e-0360c4c59119-480-fragmented.mp4" framerate="30" duration="18" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="153818" url="https://media.tube.tchncs.de/streaming-playlists/hls/adcfa033-de9c-4dd0-b1c8-6789fa0a44e7/2b9410f4-a71f-4023-921b-0985243daa09-360-fragmented.mp4" framerate="30" duration="18" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/7fd6f1c9-579a-4a0b-a127-d66ba5afe84a.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">KDE Plasma 6.9: Suspending night color</media:title>
+            <media:description type="plain">Unfortunately the color temperature changes aren’t shown in this video, but trust me: something is actually visibly happening on a physical screen!</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Méthodes musclées (Bonus Time-lapse — Grise Bouille)]]></title>
+            <link>https://framatube.org/w/dMTv9rrgP4NQdFEVrSQEdc</link>
+            <guid>https://framatube.org/w/dMTv9rrgP4NQdFEVrSQEdc</guid>
+            <pubDate>Sun, 18 Oct 2026 11:52:42 GMT</pubDate>
+            <description><![CDATA[Time-lapse de la réalisation de la BD Méthodes musclées publiée le 19 octobre 2026 sur le blog. Time-lapse of the creation of the comic Rough Methods...]]></description>
+            <content:encoded><![CDATA[<p>Time-lapse de la réalisation de la BD <a href="https://grisebouille.net/methodes-musclees" target="_blank" rel="noopener noreferrer"><em>Méthodes musclées</em></a> publiée le 19 octobre 2026 sur le blog.</p>
+<p>Time-lapse of the creation of the comic <a href="https://grisebouille.net/en/rough-methods" target="_blank" rel="noopener noreferrer"><em>Rough Methods</em></a>, published on October 19, 2026, on the blog.</p>
+]]></content:encoded>
+            <dc:creator>Grise Bouille</dc:creator>
+            <category>Art</category>
+            <enclosure length="5432653" type="video/mp4" url="https://framatube.org/download/videos/generate/6795df84-b0ba-4e0b-a5f7-7f590fb5209b?videoFileIds=1661191"/>
+            <media:community>
+                <media:statistics views="42"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/dMTv9rrgP4NQdFEVrSQEdc"/>
+            <media:player url="https://framatube.org/w/dMTv9rrgP4NQdFEVrSQEdc"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/afa0d08b-413e-453d-a63b-f17d461ecb77-1080-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/281cdc89-2d45-402e-a88e-2a6db7be72ae-720-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/73a6111c-7fb6-47fb-aeae-925563b11a60-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/2b0d19b3-c0a4-4b11-a8ba-66e6567263fa-360-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/a4fd5f70-db8a-447c-914a-f7aaca2fbb63-240-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/1982542e-7ab8-4c61-be27-daee692c373e-144-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="1080" fileSize="5432653" url="https://aperi.tube/static/streaming-playlists/hls/6795df84-b0ba-4e0b-a5f7-7f590fb5209b/6dfb4d29-2ac8-4577-8dd2-4145a337064e-1080-fragmented.mp4" framerate="20" duration="170" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="6054160" url="https://aperi.tube/static/streaming-playlists/hls/6795df84-b0ba-4e0b-a5f7-7f590fb5209b/c2e1288f-a93f-4f81-957b-2adf56f4159e-720-fragmented.mp4" framerate="20" duration="170" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="5099639" url="https://aperi.tube/static/streaming-playlists/hls/6795df84-b0ba-4e0b-a5f7-7f590fb5209b/b4bf83b1-d856-4c22-873d-7e3000e1c0e8-480-fragmented.mp4" framerate="20" duration="170" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="3734472" url="https://aperi.tube/static/streaming-playlists/hls/6795df84-b0ba-4e0b-a5f7-7f590fb5209b/eb1c5797-882f-4fed-9364-25d5eb404b7c-360-fragmented.mp4" framerate="20" duration="170" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="240" fileSize="2060057" url="https://aperi.tube/static/streaming-playlists/hls/6795df84-b0ba-4e0b-a5f7-7f590fb5209b/2caca4d2-46f1-40cc-8711-5ad373e4e211-240-fragmented.mp4" framerate="20" duration="170" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="144" fileSize="895265" url="https://aperi.tube/static/streaming-playlists/hls/6795df84-b0ba-4e0b-a5f7-7f590fb5209b/f2ff3748-0868-46b0-8160-35472b191e94-144-fragmented.mp4" framerate="20" duration="170" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/a46d2b73-a472-4562-9c8e-69ae8e2a50da.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Méthodes musclées (Bonus Time-lapse — Grise Bouille)</media:title>
+            <media:description type="plain">Time-lapse de la réalisation de la BD Méthodes musclées publiée le 19 octobre 2026 sur le blog. Time-lapse of the creation of the comic Rough Methods...</media:description>
+        </item>
+        <item>
+            <title><![CDATA[Join the movement - SPX6900]]></title>
+            <link>https://framatube.org/w/54mu1VokPy788bRUnPCfM7</link>
+            <guid>https://framatube.org/w/54mu1VokPy788bRUnPCfM7</guid>
+            <pubDate>Sun, 18 Oct 2026 11:11:20 GMT</pubDate>
+            <description><![CDATA[Join the movement! Flip the stock market 💹🧲 Impressions of SPX6900 Voice: Matt Beck as a guest at "Persist Forever" podcast hosted by Southern Fried Chad]]></description>
+            <content:encoded><![CDATA[<p>Join the movement!<br />
+Flip the stock market 💹🧲</p>
+<p>Impressions of SPX6900</p>
+<p>Voice: Matt Beck as a guest at "Persist Forever" podcast hosted by Southern Fried Chad</p>
+]]></content:encoded>
+            <dc:creator>aeon_kn channel</dc:creator>
+            <category>Activism</category>
+            <enclosure length="33502949" type="video/mp4" url="https://framatube.org/download/videos/generate/20dc68b8-9eba-4f38-95fd-fff2be96af60?videoFileIds=1661021"/>
+            <media:community>
+                <media:statistics views="10"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/54mu1VokPy788bRUnPCfM7"/>
+            <media:player url="https://framatube.org/w/54mu1VokPy788bRUnPCfM7"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/d7a68471-2f3d-4f0e-9d6e-b27207cef79d-1280.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/7abe2a91-348f-4db3-9bee-d4c176a2eed1-854.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/3ebf42d4-5c96-48bf-8f6d-dc9d8877a05c-640.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/5217531e-d858-435d-a0eb-f6d04d4f155c-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/3f2de20a-7314-4da2-b645-ec415f5c626f-1280-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/c29f5472-b102-4997-a377-91fa15b515cc-854-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/65c6d7fe-cf44-4a1a-86e0-9122760394f5-640-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/c743f687-d46d-4576-b208-06c7859fbb9c-0-hls.torrent" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="33502949" url="https://media.tube.tchncs.de/videos/d7ee792d-319a-400f-b517-792e29c23a15-720.mp4" framerate="30" duration="162" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="20206557" url="https://media.tube.tchncs.de/videos/f36ab400-89fd-4439-b9a0-684620858ce8-480.mp4" framerate="30" duration="162" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="14481567" url="https://media.tube.tchncs.de/videos/1f95b808-25fa-43ec-97a4-df2958052732-360.mp4" framerate="30" duration="162" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="2681866" url="https://media.tube.tchncs.de/videos/d7248af1-47b6-417d-aae4-3c79dbee3211-0.mp4" framerate="0" duration="162" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="33427151" url="https://media.tube.tchncs.de/streaming-playlists/hls/20dc68b8-9eba-4f38-95fd-fff2be96af60/f64dc76f-1a11-4dfb-94dc-828cc98a2a5f-720-fragmented.mp4" framerate="30" duration="162" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="20136195" url="https://media.tube.tchncs.de/streaming-playlists/hls/20dc68b8-9eba-4f38-95fd-fff2be96af60/06adf899-cc61-44d5-b6c0-ec07a09a0d26-480-fragmented.mp4" framerate="30" duration="162" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="360" fileSize="14410585" url="https://media.tube.tchncs.de/streaming-playlists/hls/20dc68b8-9eba-4f38-95fd-fff2be96af60/59026c04-eecb-486c-834b-4a9a9ee0138c-360-fragmented.mp4" framerate="30" duration="162" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="2688644" url="https://media.tube.tchncs.de/streaming-playlists/hls/20dc68b8-9eba-4f38-95fd-fff2be96af60/0e93b8a3-be3c-46f2-8c84-8f0bc5514c21-0-fragmented.mp4" framerate="0" duration="162" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/3b82085c-a6fd-43df-8d92-e166792b2f83.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">Join the movement - SPX6900</media:title>
+            <media:description type="plain">Join the movement! Flip the stock market 💹🧲 Impressions of SPX6900 Voice: Matt Beck as a guest at "Persist Forever" podcast hosted by Southern Fried Chad</media:description>
+        </item>
+        <item>
+            <title><![CDATA[THE ICE LIFE_MUK_2026]]></title>
+            <link>https://framatube.org/w/wpPDs6Ny7octaM3HYzzsWy</link>
+            <guid>https://framatube.org/w/wpPDs6Ny7octaM3HYzzsWy</guid>
+            <pubDate>Sun, 18 Oct 2026 09:03:06 GMT</pubDate>
+            <description><![CDATA[Choregraphy : Christina Medina Music : Mariana Ungureanu and Martin Lucas Performed by the dancers of the Music and Arts University of the city of Vienna Video : Tina Hochkogler]]></description>
+            <content:encoded><![CDATA[<p>Choregraphy : Christina Medina<br />
+Music : Mariana Ungureanu and Martin Lucas<br />
+Performed by the dancers of the Music and Arts University of the city of Vienna<br />
+Video : Tina Hochkogler</p>
+]]></content:encoded>
+            <dc:creator>LivingLab</dc:creator>
+            <category>Art</category>
+            <enclosure length="113162813" type="video/mp4" url="https://framatube.org/download/videos/generate/f645a113-dac5-4dae-9134-01e14683db7c?videoFileIds=1661007"/>
+            <media:community>
+                <media:statistics views="3"/>
+            </media:community>
+            <media:embed url="https://framatube.org/videos/embed/wpPDs6Ny7octaM3HYzzsWy"/>
+            <media:player url="https://framatube.org/w/wpPDs6Ny7octaM3HYzzsWy"/>
+            <media:group>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/8214da91-0960-4b02-b934-0c95090381b8-0.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/062af615-495a-4efa-9f02-73ea59413a30-720-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/decaa60e-542c-4e4b-b4d2-38b73bfcb290-480-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/881a653d-8e8e-400e-8a6f-100e334aae3d-240-hls.torrent" isDefault="false"/>
+                <media:peerLink type="application/x-bittorrent" href="https://framatube.org/lazy-static/torrents/18221b09-152f-477b-9c96-e01988553e3b-0-hls.torrent" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="9930048" url="https://peertube-video.cdn.tedomum.net/web-videos/ab646195-f7ca-49bf-a2aa-d51482b86b34-0.mp4" framerate="0" duration="494" isDefault="true"/>
+                <media:content type="video/mp4" medium="video" height="720" fileSize="113162813" url="https://peertube-playlist.cdn.tedomum.net/hls/f645a113-dac5-4dae-9134-01e14683db7c/14439856-65f3-4f9f-8c44-62f5b2e7fc15-720-fragmented.mp4" framerate="30" duration="494" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="480" fileSize="43983912" url="https://peertube-playlist.cdn.tedomum.net/hls/f645a113-dac5-4dae-9134-01e14683db7c/2629d28d-bffc-49a7-8895-ccf34e824307-480-fragmented.mp4" framerate="30" duration="494" isDefault="false"/>
+                <media:content type="video/mp4" medium="video" height="240" fileSize="21041530" url="https://peertube-playlist.cdn.tedomum.net/hls/f645a113-dac5-4dae-9134-01e14683db7c/26b94622-5d61-4270-9a4d-91b5a4a7681f-240-fragmented.mp4" framerate="30" duration="494" isDefault="false"/>
+                <media:content type="audio/mp4" medium="video" height="0" fileSize="9949690" url="https://peertube-playlist.cdn.tedomum.net/hls/f645a113-dac5-4dae-9134-01e14683db7c/eec204cc-3d5d-4e1a-9848-5d0c6162681c-0-fragmented.mp4" framerate="0" duration="494" isDefault="false"/>
+            </media:group>
+            <media:thumbnail url="https://framatube.org/lazy-static/thumbnails/62923a77-97dd-4597-9a82-fa3fa56e4f1e.jpg" height="1400" width="1400"/>
+            <media:rating>nonadult</media:rating>
+            <media:title type="plain">THE ICE LIFE_MUK_2026</media:title>
+            <media:description type="plain">Choregraphy : Christina Medina Music : Mariana Ungureanu and Martin Lucas Performed by the dancers of the Music and Arts University of the city of Vienna Video : Tina Hochkogler</media:description>
+        </item>
+    </channel>
+</rss>

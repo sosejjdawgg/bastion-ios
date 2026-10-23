@@ -1,0 +1,57 @@
+name: Bastion
+options:
+  bundleIdPrefix: app.bastion
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+packages:
+  BastionCore:
+    path: Core
+targets:
+  Bastion:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    dependencies:
+      - package: BastionCore
+    scheme: {}
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Bastion
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIBackgroundModes:
+          - audio
+        UIUserInterfaceStyle: Dark
+        ITSAppUsesNonExemptEncryption: false
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoadsInWebContent: true
+        LSApplicationQueriesSchemes: []
+        CFBundleURLTypes:
+          - CFBundleURLName: app.bastion.browser
+            CFBundleURLSchemes: [bastion]
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.bastion.browser
+        PRODUCT_NAME: Bastion
+        MARKETING_VERSION: "0.7.0"
+        CURRENT_PROJECT_VERSION: "8"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
+        ENABLE_BITCODE: "NO"
+        GENERATE_INFOPLIST_FILE: "NO"
