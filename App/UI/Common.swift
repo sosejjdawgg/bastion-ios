@@ -60,7 +60,7 @@ final class Thumbs {
             var req = URLRequest(url: u)
             req.httpShouldHandleCookies = false
             req.setValue(Http.userAgent, forHTTPHeaderField: "User-Agent")
-            guard let (data, _) = try? await Thumbs.session.data(for: req), let img = UIImage(data: data) else { return nil }
+            guard let res = try? await Thumbs.session.data(for: req), let img = UIImage(data: res.0) else { return nil }
             return img.preparingThumbnail(of: CGSize(width: 720, height: 720 * img.size.height / max(1, img.size.width))) ?? img
         }
         inflight[url] = t

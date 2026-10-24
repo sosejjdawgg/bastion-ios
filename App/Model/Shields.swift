@@ -74,8 +74,9 @@ final class Shields: ObservableObject {
         let keep = Set((0..<out.malware.count).map { "bastion-malware-\($0)-\(fingerprint)" } + (0..<out.ads.count).map { "bastion-ads-\($0)-\(fingerprint)" })
         let ids: [String] = await withCheckedContinuation { c in store.getAvailableContentRuleListIdentifiers { c.resume(returning: $0 ?? []) } }
         for id in ids where !keep.contains(id) { store.removeContentRuleList(forIdentifier: id) { _ in } }
+        let malwareFinal = malware, adsFinal = ads
         await MainActor.run {
-            self.malwareLists = malware; self.adLists = ads
+            self.malwareLists = malwareFinal; self.adLists = adsFinal
             self.safariRules = out.ruleCount
             self.ready = true; self.preparing = false
             self.status = "\(formatCount(Int64(self.ruleCount))) blocking rules active"

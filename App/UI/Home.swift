@@ -60,8 +60,8 @@ enum HomeLayout {
         case "BOOKMARKS": return "\(Library.shared.bookmarks.count) saved"
         default:
             guard let id = feedId(key), let m = media.module(id) else { return "" }
-            let n = media.outlets(in: m.section).count
-            let new = media.items(in: m.section).filter { !media.readIds.contains($0.id) }.count
+            let n = media.sectionOutlets(m.section).count
+            let new = media.sectionItems(m.section).filter { !media.readIds.contains($0.id) }.count
             let base = n == 0 ? "Empty — tap ⚙ on the module to add channels" : "\(n) \(id == FeedModule.NEWS ? "outlets" : "channels") · \(new) new"
             return base + (m.flare ? "" : " · not on globe")
         }

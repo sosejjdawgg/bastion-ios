@@ -14,7 +14,7 @@ struct PrivacyAlert: Codable, Identifiable, Hashable {
 
 struct BlockedItem: Identifiable, Hashable {
     let domain: String
-    let category: BastionCore.Category
+    let category: TrackerCategory
     let company: String
     var count: Int
     let blocked: Bool
@@ -168,7 +168,7 @@ final class PrivacyStats: ObservableObject {
                 if page.items[domain] == nil { page.order.append(domain) }
                 page.items[domain] = BlockedItem(domain: domain, category: .AD, company: company, count: (page.items[domain]?.count ?? 0) + 1, blocked: true)
             }
-            p.categories[BastionCore.Category.AD.rawValue, default: 0] += 1
+            p.categories[TrackerCategory.AD.rawValue, default: 0] += 1
             p.companies[company, default: 0] += 1
             p.sites["youtube.com", default: 0] += 1
             p.daily[PrivacyStats.dayKey(Date()), default: 0] += 1
@@ -202,8 +202,10 @@ final class PrivacyStats: ObservableObject {
 
     func page(_ tab: UUID) -> PageSnapshot? {
         guard let r = pages[tab] else { return nil }
-        let items = r.order.compactMap { r.items[$0] }.sorted { a, b in
-            a.category.severity != b.category.severity ? a.category.severity > b.category.severity : a.count > b.count
+        var items: [BlockedItem] = r.order.compactMap { r.items[$0] }
+        items.sort { (a: BlockedItem, b: BlockedItem) -> Bool in
+            if a.category.severity != b.category.severity { return a.category.severity > b.category.severity }
+            return a.count > b.count
         }
         return PageSnapshot(host: r.host, items: items, fingerprinting: r.fingerprinting, httpsUpgraded: r.httpsUpgraded, paramsStripped: r.paramsStripped,
                             permissionsDenied: r.permissions, secure: r.secure, youtubeAds: r.youtubeAds, wallsRemoved: r.walls, cosmeticHidden: r.cosmetic)
@@ -213,7 +215,7 @@ final class PrivacyStats: ObservableObject {
 
     struct Summary {
         let totalBlocked: Int64
-        let byCategory: [(BastionCore.Category, Int64)]
+        let byCategory: [(TrackerCategory, Int64)]
         let topCompanies: [(String, Int64)]
         let topSites: [(String, Int64)]
         let last7Days: [(String, Int64)]
@@ -225,20 +227,24 @@ final class PrivacyStats: ObservableObject {
 
     var summary: Summary {
         let cal = Calendar.current
-        let days: [(String, Int64)] = (0..<7).reversed().map { i in
-            let d = cal.date(byAdding: .day, value: -i, to: Date())!
+        var days: [(String, Int64)] = []
+        for i in stride(from: 6, through: 0, by: -1) {
+            let d = cal.date(byAdding: .day, value: -i, to: Date()) ?? Date()
             let k = PrivacyStats.dayKey(d)
-            return (k, p.daily[k] ?? 0)
+            days.append((k, p.daily[k] ?? 0))
         }
-        return Summary(
-            totalBlocked: p.categories.values.reduce(0, +),
-            byCategory: BastionCore.Category.allCases.map { ($0, p.categories[$0.rawValue] ?? 0) },
-            topCompanies: p.companies.sorted { $0.value > $1.value }.prefix(10).map { ($0.key, $0.value) },
-            topSites: p.sites.sorted { $0.value > $1.value }.prefix(10).map { ($0.key, $0.value) },
-            last7Days: days, weekTotal: days.reduce(0) { $0 + $1.1 },
-            httpsUpgrades: p.httpsUpgrades, paramsStripped: p.paramsStripped, fingerprintAttempts: p.fingerprintAttempts,
-            permissionsDenied: p.permissionsDenied, youtubeAds: p.youtubeAds, wallsRemoved: p.wallsRemoved, cosmeticHidden: p.cosmeticHidden,
-            alerts: p.alerts, since: p.since)
+        var byCategory: [(TrackerCategory, Int64)] = []
+        for c in TrackerCategory.allCases { byCategory.append((c, p.categories[c.rawValue] ?? 0)) }
+        let companies: [(String, Int64)] = p.companies.sorted { $0.value > $1.value }.prefix(10).map { ($0.key, $0.value) }
+        let sites: [(String, Int64)] = p.sites.sorted { $0.value > $1.value }.prefix(10).map { ($0.key, $0.value) }
+        var total: Int64 = 0
+        for v in p.categories.values { total += v }
+        var week: Int64 = 0
+        for d in days { week += d.1 }
+        return Summary(totalBlocked: total, byCategory: byCategory, topCompanies: companies, topSites: sites, last7Days: days, weekTotal: week,
+                       httpsUpgrades: p.httpsUpgrades, paramsStripped: p.paramsStripped, fingerprintAttempts: p.fingerprintAttempts,
+                       permissionsDenied: p.permissionsDenied, youtubeAds: p.youtubeAds, wallsRemoved: p.wallsRemoved, cosmeticHidden: p.cosmeticHidden,
+                       alerts: p.alerts, since: p.since)
     }
 
     func clearAlerts() { p.alerts = []; bump(); scheduleSave() }

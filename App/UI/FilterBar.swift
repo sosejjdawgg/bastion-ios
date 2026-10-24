@@ -5,7 +5,7 @@ import BastionCore
 /// outlet/channel chips (busiest first), and quick chips built from what's in the feed right now — saved views,
 /// Unread, Today, Videos/Articles, trending topics. Counts are live facet counts. New sources appear on their own.
 struct FilterBar: View {
-    let section: Section
+    let section: FeedSection
     let base: [MediaItem]
     let shown: Int
     let accent: Color
@@ -18,7 +18,7 @@ struct FilterBar: View {
         let f = media.prune(media.filter(for: section), section)
         let facets = media.facets(section, f, base: base)
         let topics = Topics.trending(base)
-        let outlets = media.outlets(in: section)
+        let outlets = media.sectionOutlets(section)
         let views = settings.savedViews.filter { $0.section == section }
         let since = Clock.now - 48 * 3_600_000
         var recent: [String: Int] = [:]
@@ -118,7 +118,7 @@ struct FilterBar: View {
 }
 
 struct FilterSheet: View {
-    let section: Section
+    let section: FeedSection
     let base: [MediaItem]
     let accent: Color
     let noun: String
@@ -132,7 +132,7 @@ struct FilterSheet: View {
     var body: some View {
         let f = media.prune(media.filter(for: section), section)
         let facets = media.facets(section, f, base: base)
-        let outlets = media.outlets(in: section)
+        let outlets = media.sectionOutlets(section)
         let setF: (FeedFilter) -> Void = { media.setFilter(section, $0) }
         let views = settings.savedViews.filter { $0.section == section }
         let shown = media.filtered(section, f, base: base).count

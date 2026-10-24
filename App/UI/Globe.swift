@@ -202,7 +202,7 @@ struct WorldGlobe: View {
             // prominence arcs rising from the surface
             let nx = p.x - cx, ny = p.y - cy
             let len = max(1, sqrt(nx * nx + ny * ny))
-            let (ux, uy) = (len < 2 ? (0, -1) : (nx / len, ny / len))
+            let (ux, uy): (CGFloat, CGFloat) = len < 2 ? (0, -1) : (nx / len, ny / len)
             let (tx, ty) = (-uy, ux)
             for j in 0..<3 {
                 let ph = t * (0.9 + 0.25 * Double(j)) + seed + Double(j) * 2.1

@@ -20,10 +20,10 @@ struct FeedModuleView: View {
         if let m = media.module(moduleId) {
             let s = m.section
             let accent = m.id == FeedModule.MEDIA ? Theme.teal : m.color
-            let base = media.items(in: s)
+            let base = media.sectionItems(s)
             let f = media.filter(for: s)
             let visible = media.filtered(s, f, base: base)
-            let channels = media.outlets(in: s)
+            let channels = media.sectionOutlets(s)
             let single = media.prune(f, s).sources.count == 1
             let unread = base.filter { !media.readIds.contains($0.id) }.count
 
@@ -223,10 +223,10 @@ struct NewsfeedView: View {
 
     var body: some View {
         let m = media.news
-        let base = media.items(in: .NEWS)
+        let base = media.sectionItems(.NEWS)
         let f = media.filter(for: .NEWS)
         let visible = media.filtered(.NEWS, f, base: base)
-        let outlets = media.outlets(in: .NEWS)
+        let outlets = media.sectionOutlets(.NEWS)
         let stories = f.sort == .NEWEST ? Stories.cluster(visible) : visible.map { Story(id: $0.id, items: [$0]) }
         let since = Clock.now - 12 * 3_600_000
         let top = stories.filter { $0.newest > since }.max { a, b in score(a) < score(b) }.flatMap { outletCount($0) >= 2 ? $0 : nil }
@@ -272,7 +272,7 @@ struct NewsfeedView: View {
     private func score(_ s: Story) -> Int { outletCount(s) * 10 + s.items.count }
 }
 
-private func outletNames(_ st: Story, _ media: MediaStore) -> [String] {
+@MainActor private func outletNames(_ st: Story, _ media: MediaStore) -> [String] {
     var out: [String] = []
     for i in st.items { let n = media.name(of: i.sourceId); if !out.contains(n) { out.append(n) } }
     return out
@@ -511,7 +511,7 @@ struct ModuleSettingsSheet: View {
                         Button { creating = true } label: { Label("New module like this", systemImage: "plus") }
                         if !m.builtin { Button(role: .destructive) { confirmDelete = true } label: { Label("Delete module", systemImage: "trash") } }
                     } footer: {
-                        Text((m.builtin ? "Built-in" : "Your module") + " · \(media.outlets(in: m.section).count) \(m.id == FeedModule.NEWS ? "outlets" : "channels")")
+                        Text((m.builtin ? "Built-in" : "Your module") + " · \(media.sectionOutlets(m.section).count) \(m.id == FeedModule.NEWS ? "outlets" : "channels")")
                     }
                 }
                 .scrollContentBackground(.hidden).background(Theme.bg)

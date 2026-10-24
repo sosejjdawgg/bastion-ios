@@ -12,7 +12,7 @@ struct FeedModule: Codable, Identifiable, Equatable, Hashable {
 
     static let NEWS = "news", MEDIA = "media"
     var builtin: Bool { id == FeedModule.NEWS || id == FeedModule.MEDIA }
-    var section: Section { id == FeedModule.NEWS ? .NEWS : id == FeedModule.MEDIA ? .MEDIA : Section("c:\(id)") }
+    var section: FeedSection { id == FeedModule.NEWS ? .NEWS : id == FeedModule.MEDIA ? .MEDIA : FeedSection("c:\(id)") }
     var defaultTitle: String { id == FeedModule.NEWS ? "Newsfeed" : id == FeedModule.MEDIA ? "Media" : title }
     var color: Color { Color(hex: accent) }
 }
@@ -52,8 +52,8 @@ final class MediaStore: ObservableObject {
     var media: FeedModule { modules.first { $0.id == FeedModule.MEDIA }! }
     var customModules: [FeedModule] { modules.filter { !$0.builtin } }
     func module(_ id: String) -> FeedModule? { modules.first { $0.id == id } }
-    func module(for s: Section) -> FeedModule? { modules.first { $0.section == s } }
-    func flares(_ s: Section) -> Bool { module(for: s)?.flare ?? true }
+    func module(for s: FeedSection) -> FeedModule? { modules.first { $0.section == s } }
+    func flares(_ s: FeedSection) -> Bool { module(for: s)?.flare ?? true }
 
     private func updateModule(_ id: String, _ f: (inout FeedModule) -> Void) {
         guard let i = modules.firstIndex(where: { $0.id == id }) else { return }
@@ -88,7 +88,7 @@ final class MediaStore: ObservableObject {
     private var cacheKey: Int?
     private var outletList: [Outlet] = []
     private var outletOf: [String: Outlet] = [:]
-    private var sectionOf: [String: Section] = [:]
+    private var sectionOf: [String: FeedSection] = [:]
 
     private func invalidate() { cacheKey = nil; objectWillChange.send() }
 
@@ -107,9 +107,9 @@ final class MediaStore: ObservableObject {
 
     var outlets: [Outlet] { curate(); return outletList }
     func outlet(of id: String) -> Outlet? { curate(); return outletOf[id] }
-    func section(of id: String) -> Section { curate(); return sectionOf[id] ?? .MEDIA }
+    func section(of id: String) -> FeedSection { curate(); return sectionOf[id] ?? .MEDIA }
 
-    func outlets(in s: Section) -> [Outlet] {
+    func sectionOutlets(_ s: FeedSection) -> [Outlet] {
         outlets.compactMap { o in
             let ids = o.sourceIds.filter { section(of: $0) == s }
             if ids.isEmpty { return nil }
@@ -117,7 +117,7 @@ final class MediaStore: ObservableObject {
         }
     }
 
-    func items(in s: Section) -> [MediaItem] {
+    func sectionItems(_ s: FeedSection) -> [MediaItem] {
         let ids = Set(sources.filter { $0.enabled && section(of: $0.id) == s }.map(\.id))
         let hide = Settings.shared.mediaHideShorts
         return items.filter { ids.contains($0.sourceId) && !(hide && $0.url.contains("youtube.com/shorts/")) }
@@ -132,12 +132,12 @@ final class MediaStore: ObservableObject {
                       nameOf: { [weak self] in self?.name(of: $0) ?? "" })
     }
 
-    func filter(for s: Section) -> FeedFilter { filters[s.key] ?? FeedFilter() }
-    func setFilter(_ s: Section, _ f: FeedFilter) { filters[s.key] = f }
+    func filter(for s: FeedSection) -> FeedFilter { filters[s.key] ?? FeedFilter() }
+    func setFilter(_ s: FeedSection, _ f: FeedFilter) { filters[s.key] = f }
 
     /// Drops filter values that no longer exist, so a stale filter never hides everything.
-    func prune(_ f: FeedFilter, _ s: Section) -> FeedFilter {
-        let os = outlets(in: s)
+    func prune(_ f: FeedFilter, _ s: FeedSection) -> FeedFilter {
+        let os = sectionOutlets(s)
         let groups = Set(os.map(\.id)), kinds = Set(os.flatMap(\.kinds))
         var out = f
         out.sources = f.sources.filter { groups.contains($0) }
@@ -145,8 +145,8 @@ final class MediaStore: ObservableObject {
         return out
     }
 
-    func filtered(_ s: Section, _ f: FeedFilter, base: [MediaItem]) -> [MediaItem] { Filtering.apply(base, prune(f, s), context) }
-    func facets(_ s: Section, _ f: FeedFilter, base: [MediaItem]) -> Facets { Filtering.facets(base, prune(f, s), context) }
+    func filtered(_ s: FeedSection, _ f: FeedFilter, base: [MediaItem]) -> [MediaItem] { Filtering.apply(base, prune(f, s), context) }
+    func facets(_ s: FeedSection, _ f: FeedFilter, base: [MediaItem]) -> Facets { Filtering.facets(base, prune(f, s), context) }
 
     // MARK: read state
 
@@ -160,7 +160,7 @@ final class MediaStore: ObservableObject {
 
     /// Look up what the user typed and add it (to [section] when it's a user-made module).
     @discardableResult
-    func add(_ input: String, section: Section? = nil) async throws -> MediaSource {
+    func add(_ input: String, section: FeedSection? = nil) async throws -> MediaSource {
         let r = try await SourceResolver.resolve(input)
         if let existing = sources.first(where: { $0.feedUrl == r.feedUrl }) { return existing }
         var src = MediaSource(id: String(r.feedUrl.stableHash.prefix(12)), name: String(r.name.prefix(60)), feedUrl: r.feedUrl, siteUrl: r.siteUrl,

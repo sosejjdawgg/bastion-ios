@@ -26,9 +26,9 @@ final class CurationTests: XCTestCase {
         let byId = Dictionary(uniqueKeysWithValues: s.map { ($0.id, $0) })
         var outletOf: [String: Outlet] = [:]
         for o in outlets { for id in o.sourceIds { outletOf[id] = o } }
-        func sec(_ id: String, exists: Bool = true) -> Section { Sections.of(byId[id]!, outlet: outletOf[id], all: byId, customExists: { _ in exists }) }
+        func sec(_ id: String, exists: Bool = true) -> FeedSection { Sections.of(byId[id]!, outlet: outletOf[id], all: byId, customExists: { _ in exists }) }
         XCTAssertEqual(sec("b"), .NEWS); XCTAssertEqual(sec("d"), .NEWS); XCTAssertEqual(sec("g"), .MEDIA)
-        XCTAssertEqual(sec("h"), Section("c:ent"))
+        XCTAssertEqual(sec("h"), FeedSection("c:ent"))
         XCTAssertEqual(sec("h", exists: false), .MEDIA, "deleted module falls back to auto")
     }
 
@@ -185,7 +185,7 @@ final class MiscTests: XCTestCase {
 
     func testReader() {
         let p = String(repeating: "This is a long paragraph of article text that should be kept by reader view. ", count: 4)
-        let html = "<html><head><meta property='og:title' content='Headline'></head><body><nav>menu</nav><article><p>\(p)</p><h2>Section</h2><p>\(p)</p><div class='share'>share</div></article></body></html>"
+        let html = "<html><head><meta property='og:title' content='Headline'></head><body><nav>menu</nav><article><p>\(p)</p><h2>FeedSection</h2><p>\(p)</p><div class='share'>share</div></article></body></html>"
         let a = Reader.extract(html, "https://x.com/a")
         XCTAssertEqual(a?.title, "Headline")
         XCTAssertEqual(a?.blocks.map(\.kind), [.PARAGRAPH, .HEADING, .PARAGRAPH])

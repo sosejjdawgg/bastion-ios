@@ -5,11 +5,11 @@ import Foundation
 
 /// Which home module a source belongs to: built-in Newsfeed ("news") and Media ("media"), or a module the user made
 /// ("c:<id>"), e.g. Entertainment or Hobbies.
-public struct Section: Hashable, Codable, Sendable {
+public struct FeedSection: Hashable, Codable, Sendable {
     public let key: String
     public init(_ key: String) { self.key = key }
-    public static let NEWS = Section("news")
-    public static let MEDIA = Section("media")
+    public static let NEWS = FeedSection("news")
+    public static let MEDIA = FeedSection("media")
     public var custom: Bool { key.hasPrefix("c:") }
     public init(from decoder: Decoder) throws {
         let raw = try decoder.singleValueContainer().decode(String.self)
@@ -129,10 +129,10 @@ public enum Sections {
 
     /// Newsfeed for news sites, news channels and citizen journalists; Media for everything else. Overridable per source.
     /// [customExists] says whether a user-made module ("c:<id>") still exists; sources of a deleted one fall back to auto.
-    public static func of(_ s: MediaSource, outlet: Outlet?, all: [String: MediaSource], customExists: (String) -> Bool = { _ in false }) -> Section {
+    public static func of(_ s: MediaSource, outlet: Outlet?, all: [String: MediaSource], customExists: (String) -> Bool = { _ in false }) -> FeedSection {
         if s.section == "news" { return .NEWS }
         if s.section == "media" { return .MEDIA }
-        if let k = s.section, k.hasPrefix("c:"), customExists(k) { return Section(k) }
+        if let k = s.section, k.hasPrefix("c:"), customExists(k) { return FeedSection(k) }
         if s.kind.isSite { return .NEWS }
         if let o = outlet, o.sourceIds.contains(where: { all[$0]?.kind.isSite == true }) { return .NEWS }
         if !Outlets.brandKeys(s).isDisjoint(with: newsBrands) { return .NEWS }
@@ -319,11 +319,11 @@ public struct FeedFilter: Codable, Equatable, Sendable {
 }
 
 public struct SavedView: Codable, Equatable, Identifiable, Sendable {
-    public var section: Section
+    public var section: FeedSection
     public var name: String
     public var filter: FeedFilter
     public var id: String { section.key + ":" + name }
-    public init(section: Section, name: String, filter: FeedFilter) { self.section = section; self.name = name; self.filter = filter }
+    public init(section: FeedSection, name: String, filter: FeedFilter) { self.section = section; self.name = name; self.filter = filter }
 }
 
 public struct Facets: Sendable {

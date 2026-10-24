@@ -19,6 +19,10 @@ public struct RankedResult: Identifiable, Sendable {
     public let flagged: TrackerInfo?
     public let pastBlocked: Int64
     public var id: String { url }
+    public init(title: String, url: String, host: String, snippet: String, sources: [String], score: Double, flagged: TrackerInfo?, pastBlocked: Int64) {
+        self.title = title; self.url = url; self.host = host; self.snippet = snippet; self.sources = sources; self.score = score
+        self.flagged = flagged; self.pastBlocked = pastBlocked
+    }
 }
 
 public struct SourceStatus: Sendable, Identifiable {
@@ -33,6 +37,7 @@ public struct SearchOutcome: Sendable {
     public let query: String
     public let results: [RankedResult]
     public let statuses: [SourceStatus]
+    public init(query: String, results: [RankedResult], statuses: [SourceStatus]) { self.query = query; self.results = results; self.statuses = statuses }
 }
 
 public protocol SearchSource: Sendable {

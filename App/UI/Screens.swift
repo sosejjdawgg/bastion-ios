@@ -441,7 +441,7 @@ struct SourcesScreen: View {
                 ForEach(media.modules) { m in
                     let group = media.sources.filter { media.section(of: $0.id) == m.section }
                     if !group.isEmpty {
-                        Section(m.title + (m.id == FeedModule.NEWS ? " · \(media.outlets(in: m.section).count) outlets" : " · \(group.count) channels")) {
+                        Section(m.title + (m.id == FeedModule.NEWS ? " · \(media.sectionOutlets(m.section).count) outlets" : " · \(group.count) channels")) {
                             ForEach(group) { s in
                                 Button { editing = s } label: {
                                     HStack {
@@ -551,7 +551,7 @@ struct SourceSheet: View {
         }
     }
 
-    private func autoSection(_ s: MediaSource) -> Section {
+    private func autoSection(_ s: MediaSource) -> FeedSection {
         var auto = s
         auto.section = nil
         let byId = Dictionary(uniqueKeysWithValues: media.sources.map { ($0.id, $0) })
