@@ -439,25 +439,7 @@ struct SourcesScreen: View {
             List {
                 if media.sources.isEmpty { Text("No sources yet.").foregroundStyle(Theme.muted) }
                 ForEach(media.modules) { m in
-                    let group = media.sources.filter { media.section(of: $0.id) == m.section }
-                    if !group.isEmpty {
-                        Section(m.title + (m.id == FeedModule.NEWS ? " · \(media.sectionOutlets(m.section).count) outlets" : " · \(group.count) channels")) {
-                            ForEach(group) { s in
-                                Button { editing = s } label: {
-                                    HStack {
-                                        VStack(alignment: .leading, spacing: 2) {
-                                            let o = media.outlet(of: s.id)
-                                            Text(s.name + ((o?.sourceIds.count ?? 0) > 1 ? "  ·  \(o!.name)" : "")).lineLimit(1).foregroundStyle(s.enabled ? Theme.text : Theme.muted)
-                                            Text("\(s.kind.label) · \(media.items.filter { $0.sourceId == s.id }.count) items" + (s.lastFetched > 0 ? " · \(timeAgo(s.lastFetched))" : "") + (s.lastError.map { " · \($0)" } ?? ""))
-                                                .font(.caption).foregroundStyle(s.lastError != nil ? Theme.warn : Theme.muted)
-                                        }
-                                        Spacer()
-                                        Toggle("", isOn: Binding(get: { s.enabled }, set: { media.setEnabled(s.id, $0) })).labelsHidden().tint(Theme.teal)
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    ModuleSourcesSection(module: m) { editing = $0 }
                 }
                 Section {
                     Button { importing = true } label: { Label("Import OPML", systemImage: "square.and.arrow.down") }
@@ -487,6 +469,59 @@ struct SourcesScreen: View {
                 }
             }
         }
+    }
+}
+
+/// One module's sources in the Sources screen.
+struct ModuleSourcesSection: View {
+    let module: FeedModule
+    let edit: (MediaSource) -> Void
+    @EnvironmentObject var media: MediaStore
+
+    var body: some View {
+        let group: [MediaSource] = media.sources.filter { media.section(of: $0.id) == module.section }
+        if !group.isEmpty {
+            Section(header: Text(header(group.count))) {
+                ForEach(group) { s in SourceRow(source: s) { edit(s) } }
+            }
+        }
+    }
+
+    private func header(_ n: Int) -> String {
+        if module.id == FeedModule.NEWS { return module.title + " · \(media.sectionOutlets(module.section).count) outlets" }
+        return module.title + " · \(n) channels"
+    }
+}
+
+struct SourceRow: View {
+    let source: MediaSource
+    let open: () -> Void
+    @EnvironmentObject var media: MediaStore
+
+    var body: some View {
+        Button(action: open) {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title).lineLimit(1).foregroundStyle(source.enabled ? Theme.text : Theme.muted)
+                    Text(detail).font(.caption).foregroundStyle(source.lastError != nil ? Theme.warn : Theme.muted)
+                }
+                Spacer()
+                Toggle("", isOn: Binding(get: { source.enabled }, set: { media.setEnabled(source.id, $0) })).labelsHidden().tint(Theme.teal)
+            }
+        }
+    }
+
+    private var title: String {
+        guard let o = media.outlet(of: source.id), o.sourceIds.count > 1 else { return source.name }
+        return source.name + "  ·  " + o.name
+    }
+
+    private var detail: String {
+        let n = media.items.filter { $0.sourceId == source.id }.count
+        var d = "\(source.kind.label) · \(n) items"
+        if source.lastFetched > 0 { d += " · " + timeAgo(source.lastFetched) }
+        if let e = source.lastError { d += " · " + e }
+        return d
     }
 }
 
