@@ -43,6 +43,35 @@ jobs:
           zip -qry Bastion.ipa Payload
           ls -la Bastion.ipa
 
+      - name: Simulator check (screenshots)
+        continue-on-error: true
+        timeout-minutes: 25
+        run: |
+          xcodebuild -project Bastion.xcodeproj -scheme Bastion -configuration Release -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' -derivedDataPath simbuild CODE_SIGNING_ALLOWED=NO build > sim.log 2>&1 \
+            || { grep -E "error:" sim.log | head -30; exit 1; }
+          APP=simbuild/Build/Products/Release-iphonesimulator/Bastion.app
+          UDID=$(xcrun simctl list devices available -j | python3 -c "import sys,json;d=json.load(sys.stdin)['devices'];print(next(x['udid'] for k,v in sorted(d.items(),reverse=True) if 'iOS' in k for x in v if x['name'].startswith('iPhone 16')))")
+          echo "device $UDID"
+          xcrun simctl boot "$UDID"; xcrun simctl bootstatus "$UDID" -b
+          xcrun simctl status_bar "$UDID" override --time 9:41 --batteryState charged --batteryLevel 100 --cellularBars 4 --wifiBars 3 || true
+          xcrun simctl install "$UDID" "$APP"
+          mkdir -p shots
+          run() { name=$1; wait=$2; shift 2; xcrun simctl terminate "$UDID" app.bastion.browser 2>/dev/null; xcrun simctl launch "$UDID" app.bastion.browser "$@"; sleep "$wait"; xcrun simctl io "$UDID" screenshot "shots/$name.png"; }
+          run 1-home 120 -seed
+          run 2-newsfeed 15 -scrollTo NEWSFEED
+          run 3-globe 15 -scrollTo GLOBE
+          run 4-media 15 -scrollTo MEDIA
+          run 5-entertainment 15 -scrollTo C:
+          run 6-web 40 -open https://www.theguardian.com/uk
+          run 7-shield 45 -open https://www.theguardian.com/uk -sheet shield -sheetDelay 35
+          run 8-youtube 45 -open https://m.youtube.com/
+          run 9-report 12 -sheet report
+          run 10-controls 12 -sheet controls
+          run 11-arrange 12 -sheet arrange
+          xcrun simctl spawn "$UDID" log show --last 15m --predicate 'process == "Bastion"' --style compact 2>/dev/null | tail -150 > shots/app-log.txt || true
+          ls -la shots
+
       - name: Collect logs
         if: always()
         run: |
@@ -60,6 +89,7 @@ jobs:
           files: |
             build-report.txt
             build-full.log
+            shots/*
 
       - name: Publish IPA
         uses: softprops/action-gh-release@v2

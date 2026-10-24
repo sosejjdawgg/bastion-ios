@@ -91,6 +91,7 @@ struct HomeView: View {
 
     var body: some View {
         let accent = tab.isPrivate ? Theme.purple : Theme.teal
+        ScrollViewReader { proxy in
         ScrollView {
             LazyVStack(spacing: 0) {
                 VStack(spacing: 10) {
@@ -134,7 +135,7 @@ struct HomeView: View {
                 }
 
                 ForEach(HomeLayout.visible(), id: \.self) { key in
-                    module(key).padding(.top, key == "LIVE" || key == "STATS" ? 24 : 20)
+                    module(key).padding(.top, key == "LIVE" || key == "STATS" ? 24 : 20).id(key)
                 }
 
                 Button { router.sheet = .arrange } label: {
@@ -147,6 +148,15 @@ struct HomeView: View {
             .padding(.horizontal, 16)
         }
         .scrollDismissesKeyboard(.interactively)
+        .task {
+            // automated screenshot runs only
+            if let key = DemoLaunch.arg("-scrollTo") {
+                try? await Task.sleep(nanoseconds: 4_000_000_000)
+                let target = HomeLayout.visible().first { $0.hasPrefix(key) } ?? key
+                withAnimation { proxy.scrollTo(target, anchor: .top) }
+            }
+        }
+        }
         .refreshable {
             await media.refresh(force: true)
             await media.checkLive(force: true)

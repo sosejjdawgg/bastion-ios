@@ -28,6 +28,7 @@ struct RootView: View {
             if let tab = tm.current { TabScreen(tab: tab).id(tab.id) }
         }
         .environmentObject(router)
+        .task { await DemoLaunch.run(tm: tm, router: router) }
         .sheet(item: $router.sheet) { o in
             Group {
                 switch o {
@@ -271,4 +272,44 @@ struct AddressEditor: View {
     }
 
     private func go(_ s: String) { dismiss(); tm.openUserInput(tab, s) }
+}
+
+
+/// Launch arguments used by the automated simulator check (screenshots in CI). Ignored in normal use.
+///   -seed            add a set of real news outlets, creators and a custom module, then refresh
+///   -open <url>      open a page in the current tab
+///   -sheet <name>    open a sheet (report, shield, controls, arrange, sources, tabs)
+///   -scroll <pts>    no-op marker for the screenshot script
+@MainActor
+enum DemoLaunch {
+    static func arg(_ name: String) -> String? {
+        let a = ProcessInfo.processInfo.arguments
+        guard let i = a.firstIndex(of: name), i + 1 < a.count else { return nil }
+        return a[i + 1]
+    }
+
+    static func run(tm: TabManager, router: Router) async {
+        let args = ProcessInfo.processInfo.arguments
+        let media = MediaStore.shared
+        if args.contains("-seed") && media.sources.isEmpty {
+            for u in ["https://feeds.bbci.co.uk/news/rss.xml", "https://feeds.skynews.com/feeds/rss/home.xml", "https://www.theguardian.com/uk/rss",
+                      "https://www.gbnews.com/feeds/news.rss", "https://www.aljazeera.com/xml/rss/all.xml",
+                      "https://www.youtube.com/channel/UCoMdktPbSTixAyNGwb-UYkQ", "https://www.youtube.com/channel/UCNye-wNBqNL5ZzHSJj3l8Bg",
+                      "https://www.youtube.com/@veritasium", "https://framatube.org/feeds/videos.xml?sort=-publishedAt"] {
+                _ = try? await media.add(u)
+            }
+            let ent = media.createModule("Entertainment", flare: false)
+            _ = try? await media.add("https://www.youtube.com/@kurzgesagt", section: ent.section)
+            await media.refresh(force: true)
+            await media.checkLive(force: true)
+        }
+        if let u = arg("-open"), let t = tm.current {
+            while !Shields.shared.ready { try? await Task.sleep(nanoseconds: 300_000_000) }
+            tm.navigate(t, u)
+        }
+        if let s = arg("-sheet"), let o = Overlay(rawValue: s) {
+            try? await Task.sleep(nanoseconds: UInt64((Double(arg("-sheetDelay") ?? "2") ?? 2) * 1_000_000_000))
+            router.sheet = o
+        }
+    }
 }
