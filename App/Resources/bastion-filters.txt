@@ -1,0 +1,42 @@
+! Bastion filters — ships with the app, applied on top of EasyList and uBlock lists.
+! Syntax: EasyList / uBlock Origin.
+
+! ---- YouTube: ad and ad-measurement endpoints (first-party, so domain blocking can't catch them) ----
+||youtube.com/api/stats/ads
+||youtube.com/pagead/
+||youtube.com/ptracking
+||youtube.com/get_midroll_
+||youtube.com/pcs/activeview
+||youtube.com/youtubei/v1/player/ad_break
+||youtube.com/api/stats/qoe?*adformat
+||googlevideo.com/initplayback?source=youtube&*oad=
+||googleads.g.doubleclick.net^
+||static.doubleclick.net/instream/
+||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=youtube.com|youtube-nocookie.com
+
+! ---- Common ad-tech paths on first-party domains ----
+/pagead/js/adsbygoogle.js
+/gampad/ads?
+||securepubads.g.doubleclick.net^
+||pagead2.googlesyndication.com^
+||tpc.googlesyndication.com^
+||c.amazon-adsystem.com^
+||ib.adnxs.com^
+||prebid.$script,3p
+/prebid.js$script
+/prebid-*.js$script
+/ads/ad-loader.js$script
+/adsbygoogle.$script
+
+! ---- Popular sites: in-feed sponsored units ----
+reddit.com##shreddit-ad-post
+reddit.com##shreddit-comments-page-ad
+reddit.com##[data-testid="promoted-post"]
+reddit.com##.promotedlink
+x.com##article:has([data-testid="placementTracking"])
+twitter.com##article:has([data-testid="placementTracking"])
+facebook.com##div[data-pagelet^="FeedUnit"]:has(a[href*="/ads/about"])
+instagram.com##article:has(a[href*="/ads/"])
+linkedin.com##.feed-shared-update-v2:has(.update-components-actor__sub-description:has-text(Promoted))
+twitch.tv##.stream-display-ad
+twitch.tv##[data-a-target="video-ad-label"]

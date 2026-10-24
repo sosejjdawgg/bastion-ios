@@ -1,0 +1,134 @@
+# Bastion curated tracker map: CATEGORY|Company|domain,domain,...
+# Adds company names and categories on top of the public filter lists so the privacy report can say
+# *who* was tracking you. Subdomains match automatically (x.doubleclick.net matches doubleclick.net).
+# Categories: AD, ANALYTICS, SOCIAL, FINGERPRINT, CRYPTOMINER, MALICIOUS
+
+# ---- Advertising ----
+AD|Google Ads|doubleclick.net,googlesyndication.com,googleadservices.com,adservice.google.com,googletagservices.com,2mdn.net,admob.com,fundingchoicesmessages.google.com
+AD|Amazon Ads|amazon-adsystem.com,assoc-amazon.com
+AD|Microsoft (Xandr)|adnxs.com,adnxs-simple.com
+AD|Criteo|criteo.com,criteo.net
+AD|The Trade Desk|adsrvr.org
+AD|Taboola|taboola.com,taboolasyndication.com
+AD|Outbrain|outbrain.com,widgets.outbrain.com
+AD|PubMatic|pubmatic.com
+AD|Magnite|rubiconproject.com
+AD|OpenX|openx.net
+AD|Index Exchange|casalemedia.com,indexww.com
+AD|Media.net|media.net
+AD|Yahoo Ads|ads.yahoo.com,advertising.com
+AD|Sovrn|lijit.com,sovrn.com
+AD|Equativ|smartadserver.com
+AD|TripleLift|3lift.com
+AD|Sharethrough|sharethrough.com
+AD|GumGum|gumgum.com
+AD|Teads|teads.tv
+AD|Unruly|unrulymedia.com
+AD|Yieldmo|yieldmo.com
+AD|MGID|mgid.com
+AD|Revcontent|revcontent.com
+AD|Zergnet|zergnet.com
+AD|AdRoll|adroll.com
+AD|Integral Ad Science|adsafeprotected.com
+AD|DoubleVerify|doubleverify.com
+AD|Oracle Moat|moatads.com
+AD|Adform|adform.net
+AD|Smaato|smaato.net
+AD|InMobi|inmobi.com
+AD|PropellerAds|propellerads.com
+AD|PopAds|popads.net
+AD|PopCash|popcash.net
+AD|ExoClick|exoclick.com
+AD|AppLovin|applovin.com
+AD|Unity Ads|unityads.unity3d.com
+AD|Vungle|vungle.com
+AD|Bidswitch|bidswitch.net
+AD|Amazon Sizmek|serving-sys.com
+AD|BuySellAds|carbonads.com,carbonads.net,buysellads.com
+AD|Ezoic|ezoic.net,ezojs.com
+AD|Raptive|adthrive.com
+AD|Mediavine|scripts.mediavine.com
+AD|SpotX|spotxchange.com
+AD|Yandex Ads|an.yandex.ru,yandexadexchange.net
+AD|33Across|33across.com
+
+# ---- Analytics & behavioural tracking ----
+ANALYTICS|Google Analytics|google-analytics.com,googletagmanager.com,analytics.google.com
+ANALYTICS|Meta Pixel|connect.facebook.net
+ANALYTICS|Hotjar|hotjar.com,hotjar.io
+ANALYTICS|Mixpanel|mixpanel.com,mxpnl.com
+ANALYTICS|Segment|cdn.segment.com,api.segment.io
+ANALYTICS|Amplitude|api.amplitude.com,cdn.amplitude.com,api2.amplitude.com
+ANALYTICS|Heap|heapanalytics.com
+ANALYTICS|FullStory|fullstory.com
+ANALYTICS|Microsoft Clarity|clarity.ms
+ANALYTICS|Microsoft Bing Ads|bat.bing.com
+ANALYTICS|Adobe Experience Cloud|omtrdc.net,demdex.net,2o7.net,everesttech.net
+ANALYTICS|Quantcast|quantserve.com,quantcount.com
+ANALYTICS|Comscore|scorecardresearch.com
+ANALYTICS|Nielsen|imrworldwide.com
+ANALYTICS|Chartbeat|chartbeat.com,chartbeat.net
+ANALYTICS|New Relic|nr-data.net,js-agent.newrelic.com
+ANALYTICS|Yandex Metrica|mc.yandex.ru,mc.yandex.com
+ANALYTICS|Baidu Analytics|hm.baidu.com
+ANALYTICS|Mouseflow|mouseflow.com
+ANALYTICS|Crazy Egg|crazyegg.com
+ANALYTICS|Lucky Orange|luckyorange.com,luckyorange.net
+ANALYTICS|Smartlook|smartlook.com
+ANALYTICS|Optimizely|logx.optimizely.com
+ANALYTICS|LiveRamp|rlcdn.com
+ANALYTICS|Lotame|crwdcntrl.net
+ANALYTICS|Oracle BlueKai|bluekai.com,bkrtx.com
+ANALYTICS|Tealium|tiqcdn.com,tealiumiq.com
+ANALYTICS|AppsFlyer|appsflyer.com
+ANALYTICS|Adjust|adjust.com
+ANALYTICS|Kochava|kochava.com
+ANALYTICS|Parse.ly|cdn.parsely.com,p1.parsely.com
+ANALYTICS|StatCounter|statcounter.com
+ANALYTICS|Histats|histats.com
+ANALYTICS|HubSpot|hs-analytics.net,hs-scripts.com,track.hubspot.com
+ANALYTICS|Marketo|munchkin.marketo.net,mktoresp.com
+ANALYTICS|Salesforce Pardot|pi.pardot.com
+ANALYTICS|Wunderkind|bounceexchange.com,bouncex.net
+ANALYTICS|TikTok Pixel|analytics.tiktok.com
+ANALYTICS|Snap Pixel|tr.snapchat.com,sc-static.net
+ANALYTICS|Pinterest Tag|ct.pinterest.com
+ANALYTICS|Reddit Pixel|alb.reddit.com,events.redditmedia.com
+ANALYTICS|LinkedIn Insight|px.ads.linkedin.com,snap.licdn.com
+ANALYTICS|X (Twitter) Pixel|static.ads-twitter.com,analytics.twitter.com
+ANALYTICS|Quora Pixel|q.quora.com
+ANALYTICS|Yahoo Analytics|analytics.yahoo.com,sp.analytics.yahoo.com
+ANALYTICS|Neustar|agkn.com
+ANALYTICS|Matomo Cloud|matomo.cloud
+
+# ---- Social widgets (blocked in Strict mode) ----
+SOCIAL|Facebook|facebook.com
+SOCIAL|X (Twitter)|platform.twitter.com,syndication.twitter.com
+SOCIAL|LinkedIn|platform.linkedin.com
+SOCIAL|Pinterest|assets.pinterest.com,widgets.pinterest.com
+SOCIAL|AddThis|addthis.com,addthisedge.com
+SOCIAL|ShareThis|sharethis.com
+SOCIAL|Disqus|disqus.com,disquscdn.com
+SOCIAL|Reddit|embed.reddit.com
+
+# ---- Fingerprinting & identity graphs ----
+FINGERPRINT|FingerprintJS|fpjs.io,fpcdn.io,fpnpmcdn.net
+FINGERPRINT|MaxMind|device.maxmind.com
+FINGERPRINT|Augur|augur.io
+FINGERPRINT|ID5|id5-sync.com
+FINGERPRINT|LiveIntent|liadm.com
+FINGERPRINT|Tapad|tapad.com
+FINGERPRINT|Zeotap|zeotap.com
+FINGERPRINT|Intent IQ|intentiq.com
+
+# ---- Cryptominers ----
+CRYPTOMINER|Coinhive|coinhive.com,coin-hive.com,authedmine.com,cnhv.co
+CRYPTOMINER|CryptoLoot|crypto-loot.com,cryptoloot.pro,webmine.pro
+CRYPTOMINER|JSEcoin|jsecoin.com
+CRYPTOMINER|CoinImp|coinimp.com,coinimp.net
+CRYPTOMINER|Minero|minero.cc
+CRYPTOMINER|WebMinePool|webminepool.com
+CRYPTOMINER|Monerominer|monerominer.rocks
+CRYPTOMINER|CoinHave|coin-have.com
+CRYPTOMINER|PPoi|ppoi.org
+CRYPTOMINER|Mineralt|mineralt.io
