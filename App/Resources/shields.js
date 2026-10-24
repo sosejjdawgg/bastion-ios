@@ -227,4 +227,65 @@
       document.addEventListener('DOMContentLoaded', addStyle, { once: true });
     }
   }
+
+  // ---- Anti-adblock walls ------------------------------------------------------------------
+  // Some sites (or the detection services they use) cover the page with "disable your ad blocker" when ads are
+  // missing. Find such an overlay by its wording, remove it and its backdrop, and give the page its scrolling back.
+  if (CFG.cosmetic && !/(^|\.)(youtube|youtube-nocookie|youtubekids)\.com$/.test(host)) {
+    var WALL = /(disable|turn off|pause|deactivate|switch off|whitelist|allowlist|allow ads)[^.]{0,40}ad.?block|ad.?block(er)?[^.]{0,30}(detected|enabled|is on|installed)|we (noticed|see|detected) (you('re| are) using|that you use) an? ad.?block|support us by (disabling|whitelisting)/i;
+    var wallsRemoved = 0;
+    var bigFixed = function (el) {
+      var cs = getComputedStyle(el);
+      if (cs.position !== 'fixed' && cs.position !== 'absolute' && cs.position !== 'sticky') return false;
+      var r = el.getBoundingClientRect();
+      return r.width >= innerWidth * 0.6 && r.height >= innerHeight * 0.3 && (parseInt(cs.zIndex, 10) || 0) >= 1;
+    };
+    var unlock = function () {
+      [document.documentElement, document.body].forEach(function (e) {
+        if (!e) return;
+        var cs = getComputedStyle(e);
+        if (cs.overflow === 'hidden' || cs.overflowY === 'hidden') e.style.setProperty('overflow', 'auto', 'important');
+        if (cs.position === 'fixed') e.style.setProperty('position', 'static', 'important');
+        e.style.removeProperty('filter');
+      });
+      // blurred / dimmed page content behind the wall
+      Array.prototype.forEach.call(document.querySelectorAll('body > *'), function (e) {
+        var f = getComputedStyle(e).filter;
+        if (f && f !== 'none' && /blur/.test(f)) e.style.setProperty('filter', 'none', 'important');
+      });
+    };
+    var sweep = function () {
+      if (!document.body || wallsRemoved > 5) return;
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+        acceptNode: function (t) {
+          var p = t.parentElement;
+          return p && !/^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE|TEXTAREA)$/.test(p.tagName) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        }
+      });
+      var n, overlay = null, guard = 0;
+      while (!overlay && (n = walker.nextNode()) && guard++ < 5000) {
+        var t = n.nodeValue;
+        if (!t || t.length <= 8 || t.length >= 600 || !WALL.test(t)) continue;
+        // climb to the overlay that covers the page
+        var el = n.parentElement;
+        for (var i = 0; el && el !== document.body && i < 14; i++, el = el.parentElement) { if (bigFixed(el)) overlay = el; }
+      }
+      if (!overlay) return;
+      overlay.remove();
+      // a full-screen backdrop left behind
+      Array.prototype.forEach.call(document.querySelectorAll('body > div, body > section'), function (e) {
+        if (bigFixed(e) && !e.innerText.trim()) e.remove();
+      });
+      unlock();
+      wallsRemoved++;
+      try { if (bridge) bridge.onAd('sitewall'); } catch (e) {}
+    };
+    var wallTimer = 0;
+    var queueSweep = function () { if (!wallTimer) wallTimer = setT(function () { wallTimer = 0; sweep(); }, 400); };
+    var startWalls = function () {
+      sweep();
+      try { new MutationObserver(queueSweep).observe(document.documentElement, { childList: true, subtree: true }); } catch (e) {}
+    };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startWalls, { once: true }); else startWalls();
+  }
 })();

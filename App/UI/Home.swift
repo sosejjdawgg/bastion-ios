@@ -157,6 +157,8 @@ struct HomeView: View {
             }
         }
         }
+        // keep scrolled content from showing through the status bar
+        .overlay(alignment: .top) { Theme.bg.opacity(0.97).ignoresSafeArea(edges: .top).frame(height: 0) }
         .refreshable {
             await media.refresh(force: true)
             await media.checkLive(force: true)

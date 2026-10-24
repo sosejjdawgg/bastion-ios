@@ -153,6 +153,16 @@ final class PrivacyStats: ObservableObject {
     func recordYouTube(_ tab: UUID, _ kind: String) {
         let page = pages[tab]
         let company = "YouTube (Google)"
+        if kind == "sitewall" {
+            p.wallsRemoved += 1
+            page?.walls += 1
+            if let page, page.alerted.insert("sitewall").inserted {
+                push(tab, PrivacyAlert(time: Clock.now, severity: .WARNING, title: "Removed an ad-blocker wall",
+                                       detail: "\(page.host) covered the page because ads were blocked. Bastion removed the pop-up and gave you back scrolling.", site: page.host))
+            }
+            bump(); scheduleSave()
+            return
+        }
         if kind == "wall" {
             p.wallsRemoved += 1
             page?.walls += 1

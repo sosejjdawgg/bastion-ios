@@ -283,7 +283,7 @@ final class TabManager: NSObject, ObservableObject {
             if ["Canvas", "WebGL", "Audio", "Font probing"].contains(k) { PrivacyStats.shared.recordFingerprint(tab.id, k, frameHost: String((body["h"] as? String ?? "").prefix(128))) }
             reply(nil, nil)
         case "ad":
-            if let k = body["k"] as? String, ["pruned", "skipped", "wall"].contains(k) { PrivacyStats.shared.recordYouTube(tab.id, k) }
+            if let k = body["k"] as? String, ["pruned", "skipped", "wall", "sitewall"].contains(k) { PrivacyStats.shared.recordYouTube(tab.id, k) }
             reply(nil, nil)
         case "gen":
             let (css, n) = Shields.shared.genericCss(keysJSON: body["keys"] as? String ?? "[]", href: body["href"] as? String ?? "")
